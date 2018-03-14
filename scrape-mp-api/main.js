@@ -88,8 +88,7 @@ function parseRoot(rootElement, curUrl, $) {
             const $span = $li.children('span')
             if ($span.length > 0) {
                 name = $span.text().trim()
-                hfre = null
-                // console.log(name)
+                href = null
             }
         }
         return {
