@@ -1,0 +1,1779 @@
+[
+ {
+  "type": "category",
+  "name": "渲染",
+  "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/canvas/wx.createCanvas.html?t=201832",
+  "children": [
+   {
+    "type": "category",
+    "name": "画布",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/canvas/wx.createCanvas.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.createCanvas",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/canvas/wx.createCanvas.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Canvas",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/canvas/Canvas.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "RenderingContext",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/canvas/RenderingContext.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Canvas.getContext",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/canvas/Canvas.getContext.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Canvas.toTempFilePath",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/canvas/Canvas.toTempFilePath.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Canvas.toDataURL",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/canvas/Canvas.toDataURL.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Canvas.toTempFilePathSync",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/canvas/Canvas.toTempFilePathSync.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "图片",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/image/wx.createImage.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.createImage",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/image/wx.createImage.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Image",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/image/Image.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "字体",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/font/wx.getTextLineHeight.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getTextLineHeight",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/font/wx.getTextLineHeight.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.loadFont",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/font/wx.loadFont.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "帧率",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/frame/wx.setPreferredFramesPerSecond.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.setPreferredFramesPerSecond",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/frame/wx.setPreferredFramesPerSecond.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "cancelAnimationFrame",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/frame/cancelAnimationFrame.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "requestAnimationFrame",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/render/frame/requestAnimationFrame.html?t=201832",
+      "children": null
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "系统",
+  "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/life-cycle/wx.exitMiniProgram.html?t=201832",
+  "children": [
+   {
+    "type": "category",
+    "name": "生命周期",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/life-cycle/wx.exitMiniProgram.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.exitMiniProgram",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/life-cycle/wx.exitMiniProgram.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.getLaunchOptionsSync",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/life-cycle/wx.getLaunchOptionsSync.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.onHide",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/life-cycle/wx.onHide.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.offHide",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/life-cycle/wx.offHide.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.onShow",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/life-cycle/wx.onShow.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.offShow",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/life-cycle/wx.offShow.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "系统信息",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/system-info/wx.getSystemInfo.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getSystemInfo",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/system-info/wx.getSystemInfo.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.getSystemInfoSync",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/system-info/wx.getSystemInfoSync.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "系统事件",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/system-event/wx.onAudioInterruptionEnd.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.onAudioInterruptionEnd",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/system-event/wx.onAudioInterruptionEnd.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.offAudioInterruptionEnd",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/system-event/wx.offAudioInterruptionEnd.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.onAudioInterruptionBegin",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/system-event/wx.onAudioInterruptionBegin.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.offAudioInterruptionBegin",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/system-event/wx.offAudioInterruptionBegin.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.onError",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/system-event/wx.onError.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.offError",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/system-event/wx.offError.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "触摸事件",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/touch-event/wx.onTouchStart.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.onTouchStart",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/touch-event/wx.onTouchStart.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.offTouchStart",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/touch-event/wx.offTouchStart.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.onTouchMove",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/touch-event/wx.onTouchMove.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.offTouchMove",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/touch-event/wx.offTouchMove.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.onTouchEnd",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/touch-event/wx.onTouchEnd.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.offTouchEnd",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/touch-event/wx.offTouchEnd.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.onTouchCancel",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/touch-event/wx.onTouchCancel.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.offTouchCancel",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/touch-event/wx.offTouchCancel.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Touch",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/system/touch-event/Touch.html?t=201832",
+      "children": null
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "设备",
+  "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/accelerometer/wx.onAccelerometerChange.html?t=201832",
+  "children": [
+   {
+    "type": "category",
+    "name": "加速计",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/accelerometer/wx.onAccelerometerChange.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.onAccelerometerChange",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/accelerometer/wx.onAccelerometerChange.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.startAccelerometer",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/accelerometer/wx.startAccelerometer.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.stopAccelerometer",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/accelerometer/wx.stopAccelerometer.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "电量",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/battery/wx.getBatteryInfo.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getBatteryInfo",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/battery/wx.getBatteryInfo.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.getBatteryInfoSync",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/battery/wx.getBatteryInfoSync.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "剪贴板",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/clipboard/wx.getClipboardData.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getClipboardData",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/clipboard/wx.getClipboardData.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.setClipboardData",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/clipboard/wx.setClipboardData.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "罗盘",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/compass/wx.onCompassChange.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.onCompassChange",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/compass/wx.onCompassChange.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.startCompass",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/compass/wx.startCompass.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.stopCompass",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/compass/wx.stopCompass.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "网络",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/network/wx.getNetworkType.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getNetworkType",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/network/wx.getNetworkType.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.onNetworkStatusChange",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/network/wx.onNetworkStatusChange.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "屏幕",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/screen/wx.getScreenBrightness.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getScreenBrightness",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/screen/wx.getScreenBrightness.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.setKeepScreenOn",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/screen/wx.setKeepScreenOn.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.setScreenBrightness",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/screen/wx.setScreenBrightness.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "振动",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/vibrate/wx.vibrateShort.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.vibrateShort",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/vibrate/wx.vibrateShort.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.vibrateLong",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/device/vibrate/wx.vibrateLong.html?t=201832",
+      "children": null
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "文件",
+  "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/wx.getFileSystemManager.html?t=201832",
+  "children": [
+   {
+    "type": "item",
+    "name": "wx.getFileSystemManager",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/wx.getFileSystemManager.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "Stats",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/Stats.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.access",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.access.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.accessSync",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.accessSync.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.copyFile",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.copyFile.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.copyFileSync",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.copyFileSync.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.getFileInfo",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.getFileInfo.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.getSavedFileList",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.getSavedFileList.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "Stats.isDirectory",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/Stats.isDirectory.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "Stats.isFile",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/Stats.isFile.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.mkdir",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.mkdir.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.mkdirSync",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.mkdirSync.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.removeSavedFile",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.removeSavedFile.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.readFile",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.readFile.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.rename",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.rename.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.rmdir",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.rmdir.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.readdir",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.readdir.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.readdirSync",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.readdirSync.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.renameSync",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.renameSync.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.rmdirSync",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.rmdirSync.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.readFileSync",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.readFileSync.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.saveFile",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.saveFile.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.stat",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.stat.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.saveFileSync",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.saveFileSync.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.statSync",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.statSync.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.unlink",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.unlink.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.unzip",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.unzip.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.unlinkSync",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.unlinkSync.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.writeFile",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.writeFile.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "FileSystemManager.writeFileSync",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/file/FileSystemManager.writeFileSync.html?t=201832",
+    "children": null
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "位置",
+  "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/location/wx.getLocation.html?t=201832",
+  "children": [
+   {
+    "type": "item",
+    "name": "wx.getLocation",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/location/wx.getLocation.html?t=201832",
+    "children": null
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "网络",
+  "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/download/wx.downloadFile.html?t=201832",
+  "children": [
+   {
+    "type": "category",
+    "name": "下载",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/download/wx.downloadFile.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.downloadFile",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/download/wx.downloadFile.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "DownloadTask",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/download/DownloadTask.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "DownloadTask.abort",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/download/DownloadTask.abort.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "DownloadTask.onProgressUpdate",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/download/DownloadTask.onProgressUpdate.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "发起请求",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/request/wx.request.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.request",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/request/wx.request.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "RequestTask",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/request/RequestTask.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "RequestTask.abort",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/request/RequestTask.abort.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "WebSocket",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/websocket/wx.connectSocket.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.connectSocket",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/websocket/wx.connectSocket.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.closeSocket",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/websocket/wx.closeSocket.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.onSocketOpen",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/websocket/wx.onSocketOpen.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.onSocketClose",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/websocket/wx.onSocketClose.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.onSocketMessage",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/websocket/wx.onSocketMessage.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.onSocketError",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/websocket/wx.onSocketError.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.sendSocketMessage",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/websocket/wx.sendSocketMessage.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "SocketTask",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/websocket/SocketTask.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "SocketTask.close",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/websocket/SocketTask.close.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "SocketTask.onOpen",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/websocket/SocketTask.onOpen.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "SocketTask.onClose",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/websocket/SocketTask.onClose.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "SocketTask.onError",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/websocket/SocketTask.onError.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "SocketTask.onMessage",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/websocket/SocketTask.onMessage.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "SocketTask.send",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/websocket/SocketTask.send.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "上传",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/upload/wx.uploadFile.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.uploadFile",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/upload/wx.uploadFile.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "UploadTask",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/upload/UploadTask.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "UploadTask.abort",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/upload/UploadTask.abort.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "UploadTask.onProgressUpdate",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/upload/UploadTask.onProgressUpdate.html?t=201832",
+      "children": null
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "开放接口",
+  "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/login/wx.checkSession.html?t=201832",
+  "children": [
+   {
+    "type": "category",
+    "name": "登录",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/login/wx.checkSession.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.checkSession",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/login/wx.checkSession.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.login",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/login/wx.login.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "授权",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/authorize/wx.authorize.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.authorize",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/authorize/wx.authorize.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "用户信息",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/user-info/wx.getUserInfo.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getUserInfo",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/user-info/wx.getUserInfo.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "UserInfo",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/user-info/UserInfo.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "设置",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/setting/wx.getSetting.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getSetting",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/setting/wx.getSetting.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.openSetting",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/setting/wx.openSetting.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "AuthSetting",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/setting/AuthSetting.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "微信运动",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/werun/wx.getWeRunData.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getWeRunData",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/werun/wx.getWeRunData.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "开放数据",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/data/wx.getFriendCloudStorage.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getFriendCloudStorage",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/data/wx.getFriendCloudStorage.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.getGroupCloudStorage",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/data/wx.getGroupCloudStorage.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.getUserCloudStorage",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/data/wx.getUserCloudStorage.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.removeUserCloudStorage",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/data/wx.removeUserCloudStorage.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.setUserCloudStorage",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/data/wx.setUserCloudStorage.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "KVData",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/data/KVData.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "UserGameData",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/open-api/data/UserGameData.html?t=201832",
+      "children": null
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "转发",
+  "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/share/wx.getShareInfo.html?t=201832",
+  "children": [
+   {
+    "type": "item",
+    "name": "wx.getShareInfo",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/share/wx.getShareInfo.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "wx.hideShareMenu",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/share/wx.hideShareMenu.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "wx.onShareAppMessage",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/share/wx.onShareAppMessage.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "wx.offShareAppMessage",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/share/wx.offShareAppMessage.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "wx.showShareMenu",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/share/wx.showShareMenu.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "wx.shareAppMessage",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/share/wx.shareAppMessage.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "wx.updateShareMenu",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/share/wx.updateShareMenu.html?t=201832",
+    "children": null
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "调试",
+  "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/debug/wx.setEnableDebug.html?t=201832",
+  "children": [
+   {
+    "type": "item",
+    "name": "wx.setEnableDebug",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/debug/wx.setEnableDebug.html?t=201832",
+    "children": null
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "数据缓存",
+  "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/storage/wx.clearStorage.html?t=201832",
+  "children": [
+   {
+    "type": "item",
+    "name": "wx.clearStorage",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/storage/wx.clearStorage.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "wx.clearStorageSync",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/storage/wx.clearStorageSync.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "wx.getStorage",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/storage/wx.getStorage.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "wx.getStorageInfo",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/storage/wx.getStorageInfo.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "wx.getStorageSync",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/storage/wx.getStorageSync.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "wx.getStorageInfoSync",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/storage/wx.getStorageInfoSync.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "wx.removeStorage",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/storage/wx.removeStorage.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "wx.removeStorageSync",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/storage/wx.removeStorageSync.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "wx.setStorage",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/storage/wx.setStorage.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "wx.setStorageSync",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/storage/wx.setStorageSync.html?t=201832",
+    "children": null
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "界面",
+  "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/interaction/wx.hideToast.html?t=201832",
+  "children": [
+   {
+    "type": "category",
+    "name": "交互",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/interaction/wx.hideToast.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.hideToast",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/interaction/wx.hideToast.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.hideLoading",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/interaction/wx.hideLoading.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.showModal",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/interaction/wx.showModal.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.showToast",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/interaction/wx.showToast.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.showLoading",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/interaction/wx.showLoading.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.showActionSheet",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/interaction/wx.showActionSheet.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "键盘",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/keyboard/wx.hideKeyboard.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.hideKeyboard",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/keyboard/wx.hideKeyboard.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.onKeyboardInput",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/keyboard/wx.onKeyboardInput.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.offKeyboardInput",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/keyboard/wx.offKeyboardInput.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.onKeyboardConfirm",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/keyboard/wx.onKeyboardConfirm.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.offKeyboardConfirm",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/keyboard/wx.offKeyboardConfirm.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.onKeyboardComplete",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/keyboard/wx.onKeyboardComplete.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.offKeyboardComplete",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/keyboard/wx.offKeyboardComplete.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.showKeyboard",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/keyboard/wx.showKeyboard.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "菜单",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/menu/wx.setMenuStyle.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.setMenuStyle",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/menu/wx.setMenuStyle.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "窗口",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/window/wx.onWindowResize.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.onWindowResize",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/window/wx.onWindowResize.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.offWindowResize",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/ui/window/wx.offWindowResize.html?t=201832",
+      "children": null
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "Worker",
+  "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/worker/wx.createWorker.html?t=201832",
+  "children": [
+   {
+    "type": "item",
+    "name": "wx.createWorker",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/worker/wx.createWorker.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "Worker",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/worker/Worker.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "Worker.onMessage",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/worker/Worker.onMessage.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "Worker.postMessage",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/worker/Worker.postMessage.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "Worker.terminate",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/worker/Worker.terminate.html?t=201832",
+    "children": null
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "媒体",
+  "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/wx.createInnerAudioContext.html?t=201832",
+  "children": [
+   {
+    "type": "category",
+    "name": "音频",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/wx.createInnerAudioContext.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.createInnerAudioContext",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/wx.createInnerAudioContext.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.destroy",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.destroy.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.offCanplay",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.offCanplay.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.onPause",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.onPause.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.onStop",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.onStop.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.offStop",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.offStop.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.onEnded",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.onEnded.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.offEnded",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.offEnded.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.onTimeUpdate",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.onTimeUpdate.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.onPlay",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.onPlay.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.onError",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.onError.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.offPause",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.offPause.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.onWaiting",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.onWaiting.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.offWaiting",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.offWaiting.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.onSeeking",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.onSeeking.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.offSeeking",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.offSeeking.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.onSeeked",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.onSeeked.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.offSeeked",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.offSeeked.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.offPlay",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.offPlay.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.offTimeUpdate",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.offTimeUpdate.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.onCanplay",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.onCanplay.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.offError",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.offError.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.pause",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.pause.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.pause",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.pause.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.play",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.play.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "InnerAudioContext.seek",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/audio/InnerAudioContext.seek.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "录音",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/recorder/wx.getRecorderManager.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getRecorderManager",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/recorder/wx.getRecorderManager.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "RecorderManager",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/recorder/RecorderManager.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "RecorderManager.onPause",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/recorder/RecorderManager.onPause.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "RecorderManager.onStop",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/recorder/RecorderManager.onStop.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "RecorderManager.onFrameRecorded",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/recorder/RecorderManager.onFrameRecorded.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "RecorderManager.onError",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/recorder/RecorderManager.onError.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "RecorderManager.onStart",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/recorder/RecorderManager.onStart.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "RecorderManager.pause",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/recorder/RecorderManager.pause.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "RecorderManager.resume",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/recorder/RecorderManager.resume.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "RecorderManager.stop",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/recorder/RecorderManager.stop.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "RecorderManager.start",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/recorder/RecorderManager.start.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "图片",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/image/wx.chooseImage.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.chooseImage",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/image/wx.chooseImage.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.previewImage",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/image/wx.previewImage.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "wx.saveImageToPhotosAlbum",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/image/wx.saveImageToPhotosAlbum.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "ImageFile",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/image/ImageFile.html?t=201832",
+      "children": null
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "视频",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/wx.createVideo.html?t=201832",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.createVideo",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/wx.createVideo.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.exitFullScreen",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.exitFullScreen.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.onError",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.onError.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.offPlay",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.offPlay.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.onPause",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.onPause.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.offPause",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.offPause.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.onEnded",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.onEnded.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.offEnded",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.offEnded.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.onTimeUpdate",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.onTimeUpdate.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.onWaiting",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.onWaiting.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.onPlay",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.onPlay.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.offError",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.offError.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.offWaiting",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.offWaiting.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.offTimeUpdate",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.offTimeUpdate.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.pause",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.pause.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.play",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.play.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.requestFullScreen",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.requestFullScreen.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.stop",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.stop.html?t=201832",
+      "children": null
+     },
+     {
+      "type": "item",
+      "name": "Video.seek",
+      "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/media/video/Video.seek.html?t=201832",
+      "children": null
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "性能",
+  "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/performance/wx.getPerformance.html?t=201832",
+  "children": [
+   {
+    "type": "item",
+    "name": "wx.getPerformance",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/performance/wx.getPerformance.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "wx.triggerGC",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/performance/wx.triggerGC.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "Performance",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/performance/Performance.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "Performance.now",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/performance/Performance.now.html?t=201832",
+    "children": null
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "定时器",
+  "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/timer/clearTimeout.html?t=201832",
+  "children": [
+   {
+    "type": "item",
+    "name": "clearTimeout",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/timer/clearTimeout.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "clearInterval",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/timer/clearInterval.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "setTimeout",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/timer/setTimeout.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "setInterval",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/timer/setInterval.html?t=201832",
+    "children": null
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "数据上报",
+  "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/report/wx.gameLoginReport.html?t=201832",
+  "children": [
+   {
+    "type": "item",
+    "name": "wx.gameLoginReport",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/report/wx.gameLoginReport.html?t=201832",
+    "children": null
+   },
+   {
+    "type": "item",
+    "name": "wx.gameLogoutReport",
+    "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/report/wx.gameLogoutReport.html?t=201832",
+    "children": null
+   }
+  ]
+ }
+]
