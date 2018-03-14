@@ -102,12 +102,19 @@ function parseRoot(rootElement, curUrl, $) {
 
 function parseItem(itemObject) {
     getUrlWithCache(itemObject.url).then(html => {
-        return locateElement(html, 'p.page-wrapper')
+        return locateElement(html, '.page-wrapper')
     })
     .then (divWrapper => {
-        return divWrapper.find('h3').length
+        divWrapper.find('h3').toArray().some(v => {
+            const title = cheerio(v).text().trim()
+            if (title.indexOf(itemObject.name) >= 0) {
+                console.log(title)
+                return true
+            }
+            return false
+        })
     })
-    .then (len => console.log(len))
+    // .then (len => console.log(len))
     // const $h3 = pageContent.find('h3')
     // itemObject.description = 'xxxyyyy'
 }
@@ -128,4 +135,19 @@ scrapeUrl(WX_MP_API_URL).then(obj => {
     traverseItems(obj)
 })
 
+//  const testUrl = 'https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html#wxshowloadingobject'
 
+// getUrl(testUrl).then(html => {
+//     fs.writeFileSync('./testHtmlContent.js', html, { encoding: 'UTF8' })
+// })
+
+// function getTestHtmlContent() {
+//     return fs.readFileSync('./testHtmlContent.txt', { encoding: 'UTF8' })
+// }
+
+// const html = getTestHtmlContent()
+
+
+// const wrapper = locateElement(html, '.page-wrapper')
+
+// console.log(wrapper.find('h3').text())
