@@ -141,8 +141,8 @@ function saveUrlApiToJsonFile(url, filename) {
   })
 }
 
-saveUrlApiToJsonFile(WX_MP_API_URL, 'mp-api.json')
-saveUrlApiToJsonFile(GAME_API_URL, 'game-api.json')
+saveUrlApiToJsonFile(WX_MP_API_URL, './output/mp-api.json')
+saveUrlApiToJsonFile(GAME_API_URL, './output/game-api.json')
 
 //  const testUrl = 'https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html#wxshowloadingobject'
 
