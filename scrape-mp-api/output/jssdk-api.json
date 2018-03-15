@@ -1,0 +1,172 @@
+[
+ {
+  "name": "wx.miniProgram.navigateTo",
+  "desc": "参数与小程序接口一致",
+  "minVersion": "1.6.4"
+ },
+ {
+  "name": "wx.miniProgram.navigateBack",
+  "desc": "参数与小程序接口一致",
+  "minVersion": "1.6.4"
+ },
+ {
+  "name": "wx.miniProgram.switchTab",
+  "desc": "参数与小程序接口一致",
+  "minVersion": "1.6.5"
+ },
+ {
+  "name": "wx.miniProgram.reLaunch",
+  "desc": "参数与小程序接口一致",
+  "minVersion": "1.6.5"
+ },
+ {
+  "name": "wx.miniProgram.redirectTo",
+  "desc": "参数与小程序接口一致",
+  "minVersion": "1.6.5"
+ },
+ {
+  "name": "wx.miniProgram.postMessage",
+  "desc": "向小程序发送消息",
+  "minVersion": "1.7.1"
+ },
+ {
+  "name": "wx.miniProgram.getEnv",
+  "desc": "获取当前环境",
+  "minVersion": "1.7.1"
+ },
+ {
+  "category": "判断客户端是否支持js",
+  "desc": "",
+  "name": "checkJSApi"
+ },
+ {
+  "category": "图像接口",
+  "desc": "拍照或上传",
+  "name": "chooseImage"
+ },
+ {
+  "category": "",
+  "desc": "预览图片",
+  "name": "previewImage"
+ },
+ {
+  "category": "",
+  "desc": "上传图片",
+  "name": "uploadImage"
+ },
+ {
+  "category": "",
+  "desc": "下载图片",
+  "name": "downloadImage"
+ },
+ {
+  "category": "",
+  "desc": "获取本地图片",
+  "name": "getLocalImgData"
+ },
+ {
+  "category": "音频接口",
+  "desc": "开始录音",
+  "name": "startRecord"
+ },
+ {
+  "category": "",
+  "desc": "停止录音",
+  "name": "stopRecord"
+ },
+ {
+  "category": "",
+  "desc": "监听录音自动停止",
+  "name": "onVoiceRecordEnd"
+ },
+ {
+  "category": "",
+  "desc": "播放语音",
+  "name": "playVoice"
+ },
+ {
+  "category": "",
+  "desc": "暂停播放",
+  "name": "pauseVoice"
+ },
+ {
+  "category": "",
+  "desc": "停止播放",
+  "name": "stopVoice"
+ },
+ {
+  "category": "",
+  "desc": "监听语音播放完毕",
+  "name": "onVoicePlayEnd"
+ },
+ {
+  "category": "",
+  "desc": "上传接口",
+  "name": "uploadVoice"
+ },
+ {
+  "category": "",
+  "desc": "下载接口",
+  "name": "downloadVoice"
+ },
+ {
+  "category": "智能接口",
+  "desc": "识别音频",
+  "name": "translateVoice"
+ },
+ {
+  "category": "设备信息",
+  "desc": "获取网络状态",
+  "name": "getNetworkType"
+ },
+ {
+  "category": "地理位置",
+  "desc": "使用内置地图",
+  "name": "getLocation"
+ },
+ {
+  "category": "",
+  "desc": "获取地理位置",
+  "name": "openLocation"
+ },
+ {
+  "category": "摇一摇周边",
+  "desc": "开启ibeacon",
+  "name": "startSearchBeacons"
+ },
+ {
+  "category": "",
+  "desc": "关闭ibeacon",
+  "name": "stopSearchBeacons"
+ },
+ {
+  "category": "",
+  "desc": "监听ibeacon",
+  "name": "onSearchBeacons"
+ },
+ {
+  "category": "微信扫一扫",
+  "desc": "调起微信扫一扫",
+  "name": "scanQRCode"
+ },
+ {
+  "category": "微信卡券",
+  "desc": "拉取使用卡券列表",
+  "name": "chooseCard"
+ },
+ {
+  "category": "",
+  "desc": "批量添加卡券接口",
+  "name": "addCard"
+ },
+ {
+  "category": "",
+  "desc": "查看微信卡包的卡券",
+  "name": "openCard"
+ },
+ {
+  "category": "长按识别",
+  "desc": "小程序圆形码",
+  "name": "无"
+ }
+]

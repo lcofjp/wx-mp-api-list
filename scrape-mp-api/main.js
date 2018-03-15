@@ -6,9 +6,12 @@ const fs = require('fs')
 
 const { getUrlWithCache, getUrl } = require('./page-request')
 const { qRequest, qRequestList } = require('./q-request')
+const { getJssdkApi, getPluginApi } = require('./parse-table')
 
-const WX_MP_API_URL = 'https://mp.weixin.qq.com/debug/wxadoc/dev/api/'
+const MP_API_URL = 'https://mp.weixin.qq.com/debug/wxadoc/dev/api/'
 const GAME_API_URL = 'https://mp.weixin.qq.com/debug/wxagame/dev/document/render/canvas/wx.createCanvas.html?t=201832'
+const PLUGIN_API_URL = 'https://mp.weixin.qq.com/debug/wxadoc/dev/framework/plugin/api-limit.html'
+const JSSDK_API_URL = 'https://mp.weixin.qq.com/debug/wxadoc/dev/component/web-view.html'
 
 // 抓取页面的入口函数
 function scrapeUrl(url) {
@@ -94,9 +97,6 @@ function parseItem(itemObject, html) {
     }
 
   })
-  // .then (len => console.log(len))
-  // const $h3 = pageContent.find('h3')
-  // itemObject.description = 'xxxyyyy'
 }
 
 function* traverseItems(obj, categoryLevel) {
@@ -113,23 +113,6 @@ function* traverseItems(obj, categoryLevel) {
   }
 }
 
-
-// scrapeUrl(WX_MP_API_URL).then(obj => {
-//   const items = traverseItems(obj, [])
-//   const itemList = [...items]
-//   qRequestList(itemList, e => e.url, parseItem)
-//     .then(n => console.log('complete!'))
-//     // .then(() => {
-//     //   for(let i=0; i<itemList.length; i++) {
-//     //     const item = itemList[i]
-//     //     console.log(item.categoryLevel, item.name, item.detail.minVersion, item.detail.description)
-//     //   }
-//     // })
-//     .then(() => {
-//       saveToJsonFile('mp-api.json', obj)
-//     })
-// })
-
 function saveUrlApiToJsonFile(url, filename) {
   scrapeUrl(url).then(obj => {
     const items = traverseItems(obj, [])
@@ -141,6 +124,12 @@ function saveUrlApiToJsonFile(url, filename) {
   })
 }
 
-saveUrlApiToJsonFile(WX_MP_API_URL, './output/mp-api.json')
+saveUrlApiToJsonFile(MP_API_URL, './output/mp-api.json')
 saveUrlApiToJsonFile(GAME_API_URL, './output/game-api.json')
 
+getJssdkApi(JSSDK_API_URL).then(obj => {
+  saveToJsonFile('./output/jssdk-api.json', obj)
+})
+getPluginApi(PLUGIN_API_URL).then(obj => {
+  saveToJsonFile('./output/plugin-api.json', obj)
+})

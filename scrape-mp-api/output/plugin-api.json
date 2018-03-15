@@ -1,0 +1,418 @@
+[
+ {
+  "name": "wx.addPhoneContact",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.arrayBufferToBase64",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.base64ToArrayBuffer",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.canvasGetImageData",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.canvasPutImageData",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.canvasToTempFilePath",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.chooseImage",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.chooseLocation",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.chooseVideo",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.closeBLEConnection",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.closeBluetoothAdapter",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.connectSocket",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.createAnimation",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.createAudioContext",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.createBLEConnection",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.createCameraContext",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.createCanvasContext",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.createInnerAudioContext",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.createIntersectionObserver",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.createLivePlayerContext",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.createLivePusherContext",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.createMapContext",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.createSelectorQuery",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.createVideoContext",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.downloadFile",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.getBLEDeviceCharacteristics",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.getBLEDeviceServices",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.getBackgroundAudioManager",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.getBackgroundAudioPlayerState",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.getBeacons",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.getBluetoothAdapterState",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.getBluetoothDevices",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.getClipboardData",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.getConnectedBluetoothDevices",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.getImageInfo",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.getLocation",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.getNetworkType",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.getRecorderManager",
+  "minVersion": "1.9.94"
+ },
+ {
+  "name": "wx.getScreenBrightness",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.getStorage",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.getStorageSync",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.getSystemInfo",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.getSystemInfoSync",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.hideLoading",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.hideToast",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.makePhoneCall",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.makeVoIPCall",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.notifyBLECharacteristicValueChange",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.notifyBLECharacteristicValueChanged",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.onAccelerometerChange",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.onBLECharacteristicValueChange",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.onBLEConnectionStateChange",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.onBLEConnectionStateChanged",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.onBackgroundAudioPause",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.onBackgroundAudioPlay",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.onBackgroundAudioStop",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.onBeaconServiceChange",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.onBeaconUpdate",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.onBluetoothAdapterStateChange",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.onBluetoothDeviceFound",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.onCompassChange",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.onNetworkStatusChange",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.onUserCaptureScreen",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.openBluetoothAdapter",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.openLocation",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.pauseBackgroundAudio",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.pauseVoice",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.playBackgroundAudio",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.playVoice",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.previewImage",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.readBLECharacteristicValue",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.removeStorage",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.removeStorageSync",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.reportAnalytics",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.request",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.saveImageToPhotosAlbum",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.saveVideoToPhotosAlbum",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.scanCode",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.seekBackgroundAudio",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.setClipboardData",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.setKeepScreenOn",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.setScreenBrightness",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.setStorage",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.setStorageSync",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.showActionSheet",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.showLoading",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.showModal",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.showToast",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.startAccelerometer",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.startBeaconDiscovery",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.startBluetoothDevicesDiscovery",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.startCompass",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.startRecord",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.stopAccelerometer",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.stopBackgroundAudio",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.stopBeaconDiscovery",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.stopBluetoothDevicesDiscovery",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.stopCompass",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.stopRecord",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.stopVoice",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.uploadFile",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.vibrateLong",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.vibrateShort",
+  "minVersion": "1.9.6"
+ },
+ {
+  "name": "wx.writeBLECharacteristicValue",
+  "minVersion": "1.9.6"
+ }
+]
