@@ -144,18 +144,3 @@ function saveUrlApiToJsonFile(url, filename) {
 saveUrlApiToJsonFile(WX_MP_API_URL, './output/mp-api.json')
 saveUrlApiToJsonFile(GAME_API_URL, './output/game-api.json')
 
-//  const testUrl = 'https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html#wxshowloadingobject'
-
-// getUrl(testUrl).then(html => {
-//     fs.writeFileSync('./testHtmlContent.js', html, { encoding: 'UTF8' })
-// })
-
-// function getTestHtmlContent() {
-//     return fs.readFileSync('./testHtmlContent.txt', { encoding: 'UTF8' })
-// }
-
-// const html = getTestHtmlContent()
-
-// const wrapper = locateElement(html, '.page-wrapper')
-
-// console.log(wrapper.find('h3').text())
