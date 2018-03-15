@@ -58,3 +58,4 @@ typings/
 .env
 
 scrape-mp-api/testHtmlContent.txt
+.vscode

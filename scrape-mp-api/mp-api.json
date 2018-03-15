@@ -1,0 +1,5533 @@
+[
+ {
+  "type": "category",
+  "name": "网络",
+  "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-network.html",
+  "children": [
+   {
+    "type": "category",
+    "name": "发起请求",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-request.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.request",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-request.html#wxrequestobject",
+      "categoryLevel": [
+       {
+        "name": "网络",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-network.html"
+       },
+       {
+        "name": "发起请求",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-request.html"
+       }
+      ],
+      "detail": {
+       "description": "发起网络请求。使用前请先阅读说明。",
+       "funcProto": "wx.request(OBJECT)"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "上传、下载",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-file.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.uploadFile",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-file.html#wxuploadfileobject",
+      "categoryLevel": [
+       {
+        "name": "网络",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-network.html"
+       },
+       {
+        "name": "上传、下载",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-file.html"
+       }
+      ],
+      "detail": {
+       "description": "将本地资源上传到开发者服务器，客户端发起一个 HTTPS POST 请求，其中 content-type 为 multipart/form-data 。使用前请先阅读说明。",
+       "funcProto": "wx.uploadFile(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.downloadFile",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-file.html#wxdownloadfileobject",
+      "categoryLevel": [
+       {
+        "name": "网络",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-network.html"
+       },
+       {
+        "name": "上传、下载",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-file.html"
+       }
+      ],
+      "detail": {
+       "description": "下载文件资源到本地，客户端直接发起一个 HTTP GET 请求，返回文件的本地临时路径。使用前请先阅读说明。",
+       "funcProto": "wx.downloadFile(OBJECT)"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "WebSocket",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.connectSocket",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html#wxconnectsocketobject",
+      "categoryLevel": [
+       {
+        "name": "网络",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-network.html"
+       },
+       {
+        "name": "WebSocket",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html"
+       }
+      ],
+      "detail": {
+       "description": "创建一个 WebSocket 连接。使用前请先阅读说明。",
+       "funcProto": "wx.connectSocket(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.onSocketOpen",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html#wxonsocketopencallback",
+      "categoryLevel": [
+       {
+        "name": "网络",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-network.html"
+       },
+       {
+        "name": "WebSocket",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html"
+       }
+      ],
+      "detail": {
+       "description": "监听WebSocket连接打开事件。",
+       "funcProto": "wx.onSocketOpen(CALLBACK)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.onSocketError",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html#wxonsocketerrorcallback",
+      "categoryLevel": [
+       {
+        "name": "网络",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-network.html"
+       },
+       {
+        "name": "WebSocket",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html"
+       }
+      ],
+      "detail": {
+       "description": "监听WebSocket错误。",
+       "funcProto": "wx.onSocketError(CALLBACK)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.sendSocketMessage",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html#wxsendsocketmessageobject",
+      "categoryLevel": [
+       {
+        "name": "网络",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-network.html"
+       },
+       {
+        "name": "WebSocket",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html"
+       }
+      ],
+      "detail": {
+       "description": "通过 WebSocket 连接发送数据，需要先 wx.connectSocket，并在 wx.onSocketOpen 回调之后才能发送。",
+       "funcProto": "wx.sendSocketMessage(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.onSocketMessage",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html#wxonsocketmessagecallback",
+      "categoryLevel": [
+       {
+        "name": "网络",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-network.html"
+       },
+       {
+        "name": "WebSocket",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html"
+       }
+      ],
+      "detail": {
+       "description": "监听WebSocket接受到服务器的消息事件。",
+       "funcProto": "wx.onSocketMessage(CALLBACK)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.closeSocket",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html#wxclosesocket",
+      "categoryLevel": [
+       {
+        "name": "网络",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-network.html"
+       },
+       {
+        "name": "WebSocket",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html"
+       }
+      ],
+      "detail": {
+       "description": "关闭 WebSocket 连接。",
+       "funcProto": "wx.closeSocket(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.onSocketClose",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html#wxonsocketclosecallback",
+      "categoryLevel": [
+       {
+        "name": "网络",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-network.html"
+       },
+       {
+        "name": "WebSocket",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html"
+       }
+      ],
+      "detail": {
+       "description": "监听WebSocket关闭。",
+       "funcProto": "wx.onSocketClose(CALLBACK)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "SocketTask",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/socket-task.html",
+      "categoryLevel": [
+       {
+        "name": "网络",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-network.html"
+       },
+       {
+        "name": "WebSocket",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/network-socket.html"
+       }
+      ],
+      "detail": {
+       "description": "WebSocket 任务，可通过 wx.connectSocket() 接口创建返回。",
+       "funcProto": "SocketTask",
+       "minVersion": "1.7.0"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "媒体",
+  "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html",
+  "children": [
+   {
+    "type": "category",
+    "name": "图片",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.chooseImage",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html#wxchooseimageobject",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "图片",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       }
+      ],
+      "detail": {
+       "description": "从本地相册选择图片或使用相机拍照。",
+       "funcProto": "wx.chooseImage(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.previewImage",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html#wxpreviewimageobject",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "图片",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       }
+      ],
+      "detail": {
+       "description": "预览图片。",
+       "funcProto": "wx.previewImage(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.getImageInfo",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html#wxgetimageinfoobject",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "图片",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       }
+      ],
+      "detail": {
+       "description": "获取图片信息",
+       "funcProto": "wx.getImageInfo(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.saveImageToPhotosAlbum",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html#wxsaveimagetophotosalbumobject",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "图片",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       }
+      ],
+      "detail": {
+       "description": "保存图片到系统相册。需要用户授权 scope.writePhotosAlbum",
+       "funcProto": "wx.saveImageToPhotosAlbum(OBJECT)",
+       "minVersion": "1.2.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "录音",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-record.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.startRecord",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-record.html#wxstartrecordobject",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "录音",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-record.html"
+       }
+      ],
+      "detail": {
+       "description": "注意：1.6.0 版本开始，本接口不再维护。建议使用能力更强的 wx.getRecorderManager 接口",
+       "funcProto": "wx.startRecord(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.stopRecord",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-record.html#wxstoprecord",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "录音",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-record.html"
+       }
+      ],
+      "detail": {
+       "description": "​主动调用停止录音。",
+       "funcProto": "wx.stopRecord()"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "录音管理",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/getRecorderManager.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getRecorderManager",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/getRecorderManager.html",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "录音管理",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/getRecorderManager.html"
+       }
+      ],
+      "detail": {
+       "description": "获取全局唯一的录音管理器 recorderManager。",
+       "funcProto": "wx.getRecorderManager()",
+       "minVersion": "1.6.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "音频播放控制",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-voice.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.playVoice",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-voice.html#wxplayvoiceobject",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "音频播放控制",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-voice.html"
+       }
+      ],
+      "detail": {
+       "description": "注意：1.6.0 版本开始，本接口不再维护。建议使用能力更强的 wx.createInnerAudioContext 接口",
+       "funcProto": "wx.playVoice(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.pauseVoice",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-voice.html#wxpausevoice",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "音频播放控制",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-voice.html"
+       }
+      ],
+      "detail": {
+       "description": "暂停正在播放的语音。再次调用wx.playVoice播放同一个文件时，会从暂停处开始播放。如果想从头开始播放，需要先调用 wx.stopVoice。",
+       "funcProto": "wx.pauseVoice()"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.stopVoice",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-voice.html#wxstopvoice",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "音频播放控制",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-voice.html"
+       }
+      ],
+      "detail": {
+       "description": "结束播放语音。",
+       "funcProto": "wx.stopVoice()"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "音乐播放控制",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-background-audio.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getBackgroundAudioPlayerState",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-background-audio.html#wxgetbackgroundaudioplayerstateobject",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "音乐播放控制",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-background-audio.html"
+       }
+      ],
+      "detail": {
+       "description": "注意：1.2.0 版本开始，本接口不再维护。建议使用能力更强的 wx.getBackgroundAudioManager 接口",
+       "funcProto": "wx.getBackgroundAudioPlayerState(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.playBackgroundAudio",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-background-audio.html#wxplaybackgroundaudioobject",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "音乐播放控制",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-background-audio.html"
+       }
+      ],
+      "detail": {
+       "description": "使用后台播放器播放音乐，对于微信客户端来说，只能同时有一个后台音乐在播放。当用户离开小程序后，音乐将暂停播放；当用户点击“显示在聊天顶部”时，音乐不会暂停播放；当用户在其他小程序占用了音乐播放器，原有小程序内的音乐将停止播放。",
+       "funcProto": "wx.playBackgroundAudio(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.pauseBackgroundAudio",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-background-audio.html#wxpausebackgroundaudio",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "音乐播放控制",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-background-audio.html"
+       }
+      ],
+      "detail": {
+       "description": "暂停播放音乐。",
+       "funcProto": "wx.pauseBackgroundAudio()"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.seekBackgroundAudio",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-background-audio.html#wxseekbackgroundaudioobject",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "音乐播放控制",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-background-audio.html"
+       }
+      ],
+      "detail": {
+       "description": "控制音乐播放进度。",
+       "funcProto": "wx.seekBackgroundAudio(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.stopBackgroundAudio",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-background-audio.html#wxstopbackgroundaudio",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "音乐播放控制",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-background-audio.html"
+       }
+      ],
+      "detail": {
+       "description": "停止播放音乐。",
+       "funcProto": "wx.stopBackgroundAudio()"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.onBackgroundAudioPlay",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-background-audio.html#wxonbackgroundaudioplaycallback",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "音乐播放控制",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-background-audio.html"
+       }
+      ],
+      "detail": {
+       "description": "监听音乐播放。",
+       "funcProto": "wx.onBackgroundAudioPlay(CALLBACK)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.onBackgroundAudioPause",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-background-audio.html#wxonbackgroundaudiopausecallback",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "音乐播放控制",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-background-audio.html"
+       }
+      ],
+      "detail": {
+       "description": "监听音乐暂停。",
+       "funcProto": "wx.onBackgroundAudioPause(CALLBACK)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.onBackgroundAudioStop",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-background-audio.html#wxonbackgroundaudiostopcallback",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "音乐播放控制",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-background-audio.html"
+       }
+      ],
+      "detail": {
+       "description": "监听音乐停止。",
+       "funcProto": "wx.onBackgroundAudioStop(CALLBACK)"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "背景音频播放管理",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/getBackgroundAudioManager.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getBackgroundAudioManager",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/getBackgroundAudioManager.html",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "背景音频播放管理",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/getBackgroundAudioManager.html"
+       }
+      ],
+      "detail": {
+       "description": "获取全局唯一的背景音频管理器 backgroundAudioManager。",
+       "funcProto": "wx.getBackgroundAudioManager()",
+       "minVersion": "1.2.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "音频组件控制",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-audio.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.createAudioContext",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-audio.html#wxcreateaudiocontextaudioid",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "音频组件控制",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-audio.html"
+       }
+      ],
+      "detail": {
+       "description": "注意：1.6.0 版本开始，本接口不再维护。建议使用能力更强的 wx.createInnerAudioContext 接口",
+       "funcProto": "wx.createAudioContext(audioId, this)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.createInnerAudioContext",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/createInnerAudioContext.html",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "音频组件控制",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-audio.html"
+       }
+      ],
+      "detail": {
+       "description": "创建并返回内部 audio 上下文 innerAudioContext 对象。本接口是 wx.createAudioContext 升级版。",
+       "funcProto": "wx.createInnerAudioContext()",
+       "minVersion": "1.6.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "视频",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-video.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.chooseVideo",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-video.html#wxchoosevideoobject",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "视频",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-video.html"
+       }
+      ],
+      "detail": {
+       "description": "拍摄视频或从手机相册中选视频，返回视频的临时文件路径。",
+       "funcProto": "wx.chooseVideo(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.saveVideoToPhotosAlbum",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-video.html#wxsavevideotophotosalbumobject",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "视频",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-video.html"
+       }
+      ],
+      "detail": {
+       "description": "保存视频到系统相册。需要用户授权 scope.writePhotosAlbum",
+       "funcProto": "wx.saveVideoToPhotosAlbum(OBJECT)",
+       "minVersion": "1.2.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "视频组件控制",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-video.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.createVideoContext",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-video.html#wxcreatevideocontextvideoid",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "视频组件控制",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-video.html"
+       }
+      ],
+      "detail": {
+       "description": "创建并返回 video 上下文 videoContext 对象。在自定义组件下，第二个参数传入组件实例this，以操作组件内 <video/> 组件",
+       "funcProto": "wx.createVideoContext(videoId, this)"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "相机组件控制",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-camera.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.createCameraContext",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-camera.html",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "相机组件控制",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-camera.html"
+       }
+      ],
+      "detail": {
+       "description": "创建并返回 camera 上下文 cameraContext 对象，cameraContext 与页面的 camera 组件绑定，一个页面只能有一个camera，通过它可以操作对应的 <camera/> 组件。\n在自定义组件下，第一个参数传入组件实例this，以操作组件内 <camera/> 组件",
+       "funcProto": "wx.createCameraContext(this)",
+       "minVersion": "1.6.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "实时音视频",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-live-player.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.createLivePlayerContext",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-live-player.html",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "实时音视频",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-live-player.html"
+       }
+      ],
+      "detail": {
+       "description": "操作对应的 <live-player/> 组件。\n创建并返回 live-player 上下文 LivePlayerContext 对象。在自定义组件下，第二个参数传入组件实例this，以操作组件内 <live-player/> 组件",
+       "funcProto": "wx.createLivePlayerContext(domId, this)",
+       "minVersion": "1.7.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.createLivePusherContext",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-live-pusher.html",
+      "categoryLevel": [
+       {
+        "name": "媒体",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html"
+       },
+       {
+        "name": "实时音视频",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-live-player.html"
+       }
+      ],
+      "detail": {
+       "description": "创建并返回 live-pusher 上下文 LivePusherContext 对象，LivePusherContext 与页面的 <live-pusher /> 组件绑定，一个页面只能有一个 live-pusher，通过它可以操作对应的 <live-pusher/> 组件。\n在自定义组件下，第一个参数传入组件实例this，以操作组件内 <live-pusher/> 组件",
+       "funcProto": "wx.createLivePusherContext()",
+       "minVersion": "1.7.0"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "文件",
+  "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/file.html",
+  "children": [
+   {
+    "type": "item",
+    "name": "wx.saveFile",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/file.html#wxsavefileobject",
+    "categoryLevel": [
+     {
+      "name": "文件",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/file.html"
+     }
+    ],
+    "detail": {
+     "description": "保存文件到本地。注意：saveFile 会把临时文件移动，因此调用成功后传入的 tempFilePath 将不可用",
+     "funcProto": "wx.saveFile(OBJECT)"
+    }
+   },
+   {
+    "type": "item",
+    "name": "wx.getFileInfo",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/getFileInfo.html",
+    "categoryLevel": [
+     {
+      "name": "文件",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/file.html"
+     }
+    ],
+    "detail": {
+     "description": "获取文件信息",
+     "funcProto": "wx.getFileInfo(OBJECT)",
+     "minVersion": "1.4.0"
+    }
+   },
+   {
+    "type": "item",
+    "name": "wx.getSavedFileList",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/file.html#wxgetsavedfilelistobject",
+    "categoryLevel": [
+     {
+      "name": "文件",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/file.html"
+     }
+    ],
+    "detail": {
+     "description": "获取本地已保存的文件列表",
+     "funcProto": "wx.getSavedFileList(OBJECT)"
+    }
+   },
+   {
+    "type": "item",
+    "name": "wx.getSavedFileInfo",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/file.html#wxgetsavedfileinfoobject",
+    "categoryLevel": [
+     {
+      "name": "文件",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/file.html"
+     }
+    ],
+    "detail": {
+     "description": "获取本地文件的文件信息。此接口只能用于获取已保存到本地的文件，若需要获取临时文件信息，请使用 wx.getFileInfo 接口。",
+     "funcProto": "wx.getSavedFileInfo(OBJECT)"
+    }
+   },
+   {
+    "type": "item",
+    "name": "wx.removeSavedFile",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/file.html#wxremovesavedfileobject",
+    "categoryLevel": [
+     {
+      "name": "文件",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/file.html"
+     }
+    ],
+    "detail": {
+     "description": "删除本地存储的文件",
+     "funcProto": "wx.removeSavedFile(OBJECT)"
+    }
+   },
+   {
+    "type": "item",
+    "name": "wx.openDocument",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/file.html#wxopendocumentobject",
+    "categoryLevel": [
+     {
+      "name": "文件",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/file.html"
+     }
+    ],
+    "detail": {
+     "description": "新开页面打开文档，支持格式：doc, xls, ppt, pdf, docx, xlsx, pptx",
+     "funcProto": "wx.openDocument(OBJECT)"
+    }
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "数据缓存",
+  "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html",
+  "children": [
+   {
+    "type": "item",
+    "name": "wx.setStorage",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html#wxsetstorageobject",
+    "categoryLevel": [
+     {
+      "name": "数据缓存",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html"
+     }
+    ],
+    "detail": {
+     "description": "将数据存储在本地缓存中指定的 key 中，会覆盖掉原来该 key 对应的内容，这是一个异步接口。",
+     "funcProto": "wx.setStorage(OBJECT)"
+    }
+   },
+   {
+    "type": "item",
+    "name": "wx.setStorageSync",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html#wxsetstoragesynckeydata",
+    "categoryLevel": [
+     {
+      "name": "数据缓存",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html"
+     }
+    ],
+    "detail": {
+     "description": "将 data 存储在本地缓存中指定的 key 中，会覆盖掉原来该 key 对应的内容，这是一个同步接口。",
+     "funcProto": "wx.setStorageSync(KEY,DATA)"
+    }
+   },
+   {
+    "type": "item",
+    "name": "wx.getStorage",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html#wxgetstorageobject",
+    "categoryLevel": [
+     {
+      "name": "数据缓存",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html"
+     }
+    ],
+    "detail": {
+     "description": "从本地缓存中异步获取指定 key 对应的内容。",
+     "funcProto": "wx.getStorage(OBJECT)"
+    }
+   },
+   {
+    "type": "item",
+    "name": "wx.getStorageSync",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html#wxgetstoragesynckey",
+    "categoryLevel": [
+     {
+      "name": "数据缓存",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html"
+     }
+    ],
+    "detail": {
+     "description": "从本地缓存中同步获取指定 key 对应的内容。",
+     "funcProto": "wx.getStorageSync(KEY)"
+    }
+   },
+   {
+    "type": "item",
+    "name": "wx.getStorageInfo",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html#wxgetstorageinfoobject",
+    "categoryLevel": [
+     {
+      "name": "数据缓存",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html"
+     }
+    ],
+    "detail": {
+     "description": "异步获取当前storage的相关信息",
+     "funcProto": "wx.getStorageInfo(OBJECT)"
+    }
+   },
+   {
+    "type": "item",
+    "name": "wx.getStorageInfoSync",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html#wxgetstorageinfosync",
+    "categoryLevel": [
+     {
+      "name": "数据缓存",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html"
+     }
+    ],
+    "detail": {
+     "description": "同步获取当前storage的相关信息",
+     "funcProto": "wx.getStorageInfoSync"
+    }
+   },
+   {
+    "type": "item",
+    "name": "wx.removeStorage",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html#wxremovestorageobject",
+    "categoryLevel": [
+     {
+      "name": "数据缓存",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html"
+     }
+    ],
+    "detail": {
+     "description": "从本地缓存中异步移除指定 key 。",
+     "funcProto": "wx.removeStorage(OBJECT)"
+    }
+   },
+   {
+    "type": "item",
+    "name": "wx.removeStorageSync",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html#wxremovestoragesynckey",
+    "categoryLevel": [
+     {
+      "name": "数据缓存",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html"
+     }
+    ],
+    "detail": {
+     "description": "从本地缓存中同步移除指定 key 。",
+     "funcProto": "wx.removeStorageSync(KEY)"
+    }
+   },
+   {
+    "type": "item",
+    "name": "wx.clearStorage",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html#wxclearstorage",
+    "categoryLevel": [
+     {
+      "name": "数据缓存",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html"
+     }
+    ],
+    "detail": {
+     "description": "清理本地数据缓存。",
+     "funcProto": "wx.clearStorage()"
+    }
+   },
+   {
+    "type": "item",
+    "name": "wx.clearStorageSync",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html#wxclearstoragesync",
+    "categoryLevel": [
+     {
+      "name": "数据缓存",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html"
+     }
+    ],
+    "detail": {
+     "description": "同步清理本地数据缓存",
+     "funcProto": "wx.clearStorageSync()"
+    }
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "位置",
+  "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/location.html",
+  "children": [
+   {
+    "type": "category",
+    "name": "获取位置",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/location.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getLocation",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/location.html#wxgetlocationobject",
+      "categoryLevel": [
+       {
+        "name": "位置",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/location.html"
+       },
+       {
+        "name": "获取位置",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/location.html"
+       }
+      ],
+      "detail": {
+       "description": "获取当前的地理位置、速度。当用户离开小程序后，此接口无法调用；当用户点击“显示在聊天顶部”时，此接口可继续调用。",
+       "funcProto": "wx.getLocation(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.chooseLocation",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/location.html#wxchooselocationobject",
+      "categoryLevel": [
+       {
+        "name": "位置",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/location.html"
+       },
+       {
+        "name": "获取位置",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/location.html"
+       }
+      ],
+      "detail": {
+       "description": "打开地图选择位置。",
+       "funcProto": "wx.chooseLocation(OBJECT)"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "查看位置",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/location.html#wxopenlocationobject",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.openLocation",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/location.html#wxopenlocationobject",
+      "categoryLevel": [
+       {
+        "name": "位置",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/location.html"
+       },
+       {
+        "name": "查看位置",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/location.html#wxopenlocationobject"
+       }
+      ],
+      "detail": {
+       "description": "​使用微信内置地图查看位置。",
+       "funcProto": "wx.openLocation(OBJECT)"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "地图组件控制",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-map.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.createMapContext",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-map.html#wxcreatemapcontextmapid",
+      "categoryLevel": [
+       {
+        "name": "位置",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/location.html"
+       },
+       {
+        "name": "地图组件控制",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-map.html"
+       }
+      ],
+      "detail": {
+       "description": "创建并返回 map 上下文 mapContext 对象。在自定义组件下，第二个参数传入组件实例this，以操作组件内 <map/> 组件",
+       "funcProto": "wx.createMapContext(mapId, this)"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "设备",
+  "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html",
+  "children": [
+   {
+    "type": "category",
+    "name": "系统信息",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getSystemInfo",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html#wxgetsysteminfoobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "系统信息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       }
+      ],
+      "detail": {
+       "description": "获取系统信息。",
+       "funcProto": "wx.getSystemInfo(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.getSystemInfoSync",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html#wxgetsysteminfosync",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "系统信息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       }
+      ],
+      "detail": {
+       "description": "获取系统信息同步接口",
+       "funcProto": "wx.getSystemInfoSync()"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.canIUse",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-caniuse.html",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "系统信息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       }
+      ],
+      "detail": {
+       "description": "注意：此接口从基础库 1.1.1 版本开始支持。",
+       "funcProto": "wx.canIUse(String)"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "网络状态",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getNetworkType",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxgetnetworktypeobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "网络状态",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html"
+       }
+      ],
+      "detail": {
+       "description": "获取网络类型。",
+       "funcProto": "wx.getNetworkType(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.onNetworkStatusChange",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxonnetworkstatuschangecallback",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "网络状态",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html"
+       }
+      ],
+      "detail": {
+       "description": "监听网络状态变化。",
+       "funcProto": "wx.onNetworkStatusChange(CALLBACK)",
+       "minVersion": "1.1.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "加速度计",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/accelerometer.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.onAccelerometerChange",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/accelerometer.html#wxonaccelerometerchangecallback",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "加速度计",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/accelerometer.html"
+       }
+      ],
+      "detail": {
+       "description": "监听加速度数据，频率：5次/秒，接口调用后会自动开始监听，可使用 wx.stopAccelerometer 停止监听。",
+       "funcProto": "wx.onAccelerometerChange(CALLBACK)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.startAccelerometer",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/accelerometer.html#wxstartaccelerometerobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "加速度计",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/accelerometer.html"
+       }
+      ],
+      "detail": {
+       "description": "开始监听加速度数据。",
+       "funcProto": "wx.startAccelerometer(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.stopAccelerometer",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/accelerometer.html#wxstopaccelerometerobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "加速度计",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/accelerometer.html"
+       }
+      ],
+      "detail": {
+       "description": "停止监听加速度数据。",
+       "funcProto": "wx.stopAccelerometer(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "罗盘",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/compass.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.onCompassChange",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/compass.html#wxoncompasschangecallback",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "罗盘",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/compass.html"
+       }
+      ],
+      "detail": {
+       "description": "监听罗盘数据，频率：5次/秒，接口调用后会自动开始监听，可使用wx.stopCompass停止监听。",
+       "funcProto": "wx.onCompassChange(CALLBACK)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.startCompass",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/compass.html#wxstartcompassobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "罗盘",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/compass.html"
+       }
+      ],
+      "detail": {
+       "description": "开始监听罗盘数据。",
+       "funcProto": "wx.startCompass(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.stopCompass",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/compass.html#wxstopcompassobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "罗盘",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/compass.html"
+       }
+      ],
+      "detail": {
+       "description": "停止监听罗盘数据。",
+       "funcProto": "wx.stopCompass(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "拨打电话",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/phonecall.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.makePhoneCall",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/phonecall.html#wxmakephonecallobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "拨打电话",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/phonecall.html"
+       }
+      ],
+      "detail": {
+       "description": "OBJECT参数说明：",
+       "funcProto": "wx.makePhoneCall(OBJECT)"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "扫码",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/scancode.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.scanCode",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/scancode.html#wxscancodeobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "扫码",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/scancode.html"
+       }
+      ],
+      "detail": {
+       "description": "调起客户端扫码界面，扫码成功后返回对应的结果",
+       "funcProto": "wx.scanCode(OBJECT)"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "剪贴板",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/clipboard.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.setClipboardData",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/clipboard.html#wxsetclipboarddataobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "剪贴板",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/clipboard.html"
+       }
+      ],
+      "detail": {
+       "description": "设置系统剪贴板的内容",
+       "funcProto": "wx.setClipboardData(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.getClipboardData",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/clipboard.html#wxgetclipboarddataobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "剪贴板",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/clipboard.html"
+       }
+      ],
+      "detail": {
+       "description": "获取系统剪贴板内容",
+       "funcProto": "wx.getClipboardData(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "蓝牙",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.openBluetoothAdapter",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxopenbluetoothadapterobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "初始化小程序蓝牙模块，生效周期为调用wx.openBluetoothAdapter至调用wx.closeBluetoothAdapter或小程序被销毁为止。\n在小程序蓝牙适配器模块生效期间，开发者可以正常调用下面的小程序API，并会收到蓝牙模块相关的on回调。",
+       "funcProto": "wx.openBluetoothAdapter(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.closeBluetoothAdapter",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxclosebluetoothadapterobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "关闭蓝牙模块，使其进入未初始化状态。调用该方法将断开所有已建立的链接并释放系统资源。建议在使用小程序蓝牙流程后调用，与wx.openBluetoothAdapter成对调用。",
+       "funcProto": "wx.closeBluetoothAdapter(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.getBluetoothAdapterState",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxgetbluetoothadapterstateobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "获取本机蓝牙适配器状态",
+       "funcProto": "wx.getBluetoothAdapterState(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.onBluetoothAdapterStateChange",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxonbluetoothadapterstatechangecallback",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "监听蓝牙适配器状态变化事件",
+       "funcProto": "wx.onBluetoothAdapterStateChange(CALLBACK)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.startBluetoothDevicesDiscovery",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxstartbluetoothdevicesdiscoveryobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "开始搜寻附近的蓝牙外围设备。注意，该操作比较耗费系统资源，请在搜索并连接到设备后调用 stop 方法停止搜索。",
+       "funcProto": "wx.startBluetoothDevicesDiscovery(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.stopBluetoothDevicesDiscovery",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxstopbluetoothdevicesdiscoveryobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "停止搜寻附近的蓝牙外围设备。若已经找到需要的蓝牙设备并不需要继续搜索时，建议调用该接口停止蓝牙搜索。",
+       "funcProto": "wx.stopBluetoothDevicesDiscovery(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.getBluetoothDevices",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxgetbluetoothdevicesobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "获取在小程序蓝牙模块生效期间所有已发现的蓝牙设备，包括已经和本机处于连接状态的设备。",
+       "funcProto": "wx.getBluetoothDevices(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.getConnectedBluetoothDevices",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxgetconnectedbluetoothdevicesobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "根据 uuid 获取处于已连接状态的设备",
+       "funcProto": "wx.getConnectedBluetoothDevices(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.onBluetoothDeviceFound",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxonbluetoothdevicefoundcallback",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "监听寻找到新设备的事件",
+       "funcProto": "wx.onBluetoothDeviceFound(CALLBACK)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.createBLEConnection",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxcreatebleconnectionobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "连接低功耗蓝牙设备。",
+       "funcProto": "wx.createBLEConnection(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.closeBLEConnection",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxclosebleconnectionobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "断开与低功耗蓝牙设备的连接",
+       "funcProto": "wx.closeBLEConnection(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.getBLEDeviceServices",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxgetbledeviceservicesobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "获取蓝牙设备所有 service（服务）",
+       "funcProto": "wx.getBLEDeviceServices(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.getBLEDeviceCharacteristics",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxgetbledevicecharacteristicsobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "获取蓝牙设备某个服务中的所有 characteristic（特征值）",
+       "funcProto": "wx.getBLEDeviceCharacteristics(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.readBLECharacteristicValue",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxreadblecharacteristicvalueobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "读取低功耗蓝牙设备的特征值的二进制数据值。注意：必须设备的特征值支持read才可以成功调用，具体参照 characteristic 的 properties 属性",
+       "funcProto": "wx.readBLECharacteristicValue(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.writeBLECharacteristicValue",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxwriteblecharacteristicvalueobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "向低功耗蓝牙设备特征值中写入二进制数据。注意：必须设备的特征值支持write才可以成功调用，具体参照 characteristic 的 properties 属性",
+       "funcProto": "wx.writeBLECharacteristicValue(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.notifyBLECharacteristicValueChange",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxnotifyblecharacteristicvaluechangeobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "启用低功耗蓝牙设备特征值变化时的 notify 功能，订阅特征值。注意：必须设备的特征值支持notify或者indicate才可以成功调用，具体参照 characteristic 的 properties 属性",
+       "funcProto": "wx.notifyBLECharacteristicValueChange(OBJECT)",
+       "minVersion": "1.1.1"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.onBLEConnectionStateChange",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxonbleconnectionstatechangecallback",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "监听低功耗蓝牙连接状态的改变事件，包括开发者主动连接或断开连接，设备丢失，连接异常断开等等",
+       "funcProto": "wx.onBLEConnectionStateChange(CALLBACK)",
+       "minVersion": "1.1.1"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.onBLECharacteristicValueChange",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxonblecharacteristicvaluechangecallback",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "监听低功耗蓝牙设备的特征值变化。必须先启用notify接口才能接收到设备推送的notification。",
+       "funcProto": "wx.onBLECharacteristicValueChange(CALLBACK)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "错误码",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#蓝牙错误码errcode列表",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "蓝牙",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html"
+       }
+      ],
+      "detail": {
+       "description": "",
+       "funcProto": "蓝牙错误码(errCode)列表"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "iBeacon",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/iBeacon.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.startBeaconDiscovery",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/iBeacon.html#wxstartbeacondiscoveryobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "iBeacon",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/iBeacon.html"
+       }
+      ],
+      "detail": {
+       "description": "开始搜索附近的iBeacon设备",
+       "funcProto": "wx.startBeaconDiscovery(OBJECT)",
+       "minVersion": "1.2.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.stopBeaconDiscovery",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/iBeacon.html#wxstopbeacondiscoveryobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "iBeacon",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/iBeacon.html"
+       }
+      ],
+      "detail": {
+       "description": "停止搜索附近的iBeacon设备",
+       "funcProto": "wx.stopBeaconDiscovery(OBJECT)",
+       "minVersion": "1.2.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.getBeacons",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/iBeacon.html#wxgetbeaconsobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "iBeacon",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/iBeacon.html"
+       }
+      ],
+      "detail": {
+       "description": "获取所有已搜索到的iBeacon设备",
+       "funcProto": "wx.getBeacons(OBJECT)",
+       "minVersion": "1.2.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.onBeaconUpdate",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/iBeacon.html#wxonbeaconupdatecallback",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "iBeacon",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/iBeacon.html"
+       }
+      ],
+      "detail": {
+       "description": "监听 iBeacon 设备的更新事件",
+       "funcProto": "wx.onBeaconUpdate(CALLBACK)",
+       "minVersion": "1.2.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.onBeaconServiceChange",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/iBeacon.html#wxonbeaconservicechangecallback",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "iBeacon",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/iBeacon.html"
+       }
+      ],
+      "detail": {
+       "description": "监听 iBeacon 服务的状态变化",
+       "funcProto": "wx.onBeaconServiceChange(CALLBACK)",
+       "minVersion": "1.2.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "屏幕亮度",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxsetscreenbrightnessobject",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.setScreenBrightness",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxsetscreenbrightnessobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "屏幕亮度",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxsetscreenbrightnessobject"
+       }
+      ],
+      "detail": {
+       "description": "设置屏幕亮度。",
+       "funcProto": "wx.setScreenBrightness(OBJECT)",
+       "minVersion": "1.2.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.getScreenBrightness",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxgetscreenbrightnessobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "屏幕亮度",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxsetscreenbrightnessobject"
+       }
+      ],
+      "detail": {
+       "description": "获取屏幕亮度。",
+       "funcProto": "wx.getScreenBrightness(OBJECT)",
+       "minVersion": "1.2.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.setKeepScreenOn",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/setKeepScreenOn.html",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "屏幕亮度",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxsetscreenbrightnessobject"
+       }
+      ],
+      "detail": {
+       "description": "设置是否保持常亮状态。仅在当前小程序生效，离开小程序后设置失效。",
+       "funcProto": "wx.setKeepScreenOn(OBJECT)",
+       "minVersion": "1.4.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "用户截屏事件",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/onUserCaptureScreen.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.onUserCaptureScreen",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/onUserCaptureScreen.html",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "用户截屏事件",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/onUserCaptureScreen.html"
+       }
+      ],
+      "detail": {
+       "description": "监听用户主动截屏事件，用户使用系统截屏按键截屏时触发此事件",
+       "funcProto": "wx.onUserCaptureScreen(CALLBACK)",
+       "minVersion": "1.4.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "振动",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxvibratelongobject",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.vibrateLong",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxvibratelongobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "振动",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxvibratelongobject"
+       }
+      ],
+      "detail": {
+       "description": "使手机发生较长时间的振动（400ms）",
+       "funcProto": "wx.vibrateLong(OBJECT)",
+       "minVersion": "1.2.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.vibrateShort",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxvibrateshortobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "振动",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxvibratelongobject"
+       }
+      ],
+      "detail": {
+       "description": "使手机发生较短时间的振动（15ms）",
+       "funcProto": "wx.vibrateShort(OBJECT)",
+       "minVersion": "1.2.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "手机联系人",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/phone-contact.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.addPhoneContact",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/phone-contact.html#wxaddphonecontactobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "手机联系人",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/phone-contact.html"
+       }
+      ],
+      "detail": {
+       "description": "调用后，用户可以选择将该表单以“新增联系人”或“添加到已有联系人”的方式，写入手机系统通讯录，完成手机通讯录联系人和联系方式的增加。",
+       "funcProto": "wx.addPhoneContact(OBJECT)",
+       "minVersion": "1.2.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "NFC",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nfc.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getHCEState",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nfc.html#wxgethcestateobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "NFC",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nfc.html"
+       }
+      ],
+      "detail": {
+       "description": "判断当前设备是否支持 HCE 能力。",
+       "funcProto": "wx.getHCEState(OBJECT)",
+       "minVersion": "1.7.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.startHCE",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nfc.html#wxstarthceobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "NFC",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nfc.html"
+       }
+      ],
+      "detail": {
+       "description": "初始化 NFC 模块。",
+       "funcProto": "wx.startHCE(OBJECT)",
+       "minVersion": "1.7.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.stopHCE",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nfc.html#wxstophceobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "NFC",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nfc.html"
+       }
+      ],
+      "detail": {
+       "description": "关闭 NFC 模块。仅在安卓系统下有效。",
+       "funcProto": "wx.stopHCE(OBJECT)",
+       "minVersion": "1.7.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.onHCEMessage",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nfc.html#wxonhcemessagecallback",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "NFC",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nfc.html"
+       }
+      ],
+      "detail": {
+       "description": "监听 NFC 设备的消息回调，并在回调中处理。返回参数中 messageType 表示消息类型，目前有如下值：",
+       "funcProto": "wx.onHCEMessage(CALLBACK)",
+       "minVersion": "1.7.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.sendHCEMessage",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nfc.html#wx.sendhcemessageobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "NFC",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nfc.html"
+       }
+      ],
+      "detail": {
+       "description": "发送 NFC 消息。仅在安卓系统下有效。",
+       "funcProto": "wx.sendHCEMessage(OBJECT)",
+       "minVersion": "1.7.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "Wi-Fi",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.startWifi",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html#wxstartwifiobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "Wi-Fi",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html"
+       }
+      ],
+      "detail": {
+       "description": "初始化 Wi-Fi 模块。",
+       "funcProto": "wx.startWifi(OBJECT)",
+       "minVersion": "1.6.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.stopWifi",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html#wxstopwifiobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "Wi-Fi",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html"
+       }
+      ],
+      "detail": {
+       "description": "关闭 Wi-Fi 模块。",
+       "funcProto": "wx.stopWifi(OBJECT)",
+       "minVersion": "1.6.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.connectWifi",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html#wxconnectwifiobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "Wi-Fi",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html"
+       }
+      ],
+      "detail": {
+       "description": "连接 Wi-Fi。若已知 Wi-Fi 信息，可以直接利用该接口连接。仅 Android 与 iOS 11 以上版本支持。",
+       "funcProto": "wx.connectWifi(OBJECT)",
+       "minVersion": "1.6.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.getWifiList",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html#wxgetwifilistobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "Wi-Fi",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html"
+       }
+      ],
+      "detail": {
+       "description": "请求获取 Wi-Fi 列表，在 onGetWifiList 注册的回调中返回 wifiList 数据。iOS 将跳转到系统的 Wi-Fi 界面，Android 不会跳转。\niOS 11.0 及 iOS 11.1 两个版本因系统问题，该方法失效。但在 iOS 11.2 中已修复。",
+       "funcProto": "wx.getWifiList(OBJECT)",
+       "minVersion": "1.6.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.onGetWifiList",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html#wxongetwifilistcallback",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "Wi-Fi",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html"
+       }
+      ],
+      "detail": {
+       "description": "监听在获取到 Wi-Fi 列表数据时的事件，在回调中将返回 wifiList。",
+       "funcProto": "wx.onGetWifiList(CALLBACK)",
+       "minVersion": "1.6.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.setWifiList",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html#wxsetwifilistobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "Wi-Fi",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html"
+       }
+      ],
+      "detail": {
+       "description": "iOS特有接口\n在 onGetWifiList 回调后，利用接口设置 wifiList 中 AP 的相关信息。",
+       "funcProto": "wx.setWifiList(OBJECT)",
+       "minVersion": "1.6.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.onWifiConnected",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html#wxonwificonnectedcallback",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "Wi-Fi",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html"
+       }
+      ],
+      "detail": {
+       "description": "监听连接上 Wi-Fi 的事件。",
+       "funcProto": "wx.onWifiConnected(CALLBACK)",
+       "minVersion": "1.6.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.getConnectedWifi",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html#wxgetconnectedwifiobject",
+      "categoryLevel": [
+       {
+        "name": "设备",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/systeminfo.html"
+       },
+       {
+        "name": "Wi-Fi",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html"
+       }
+      ],
+      "detail": {
+       "description": "获取已连接中的 Wi-Fi 信息",
+       "funcProto": "wx.getConnectedWifi(OBJECT)",
+       "minVersion": "1.6.0"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "界面",
+  "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html",
+  "children": [
+   {
+    "type": "category",
+    "name": "交互反馈",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.showToast",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html#wxshowtoastobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "交互反馈",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       }
+      ],
+      "detail": {
+       "description": "显示消息提示框",
+       "funcProto": "wx.showToast(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.showLoading",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html#wxshowloadingobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "交互反馈",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       }
+      ],
+      "detail": {
+       "description": "显示 loading 提示框, 需主动调用 wx.hideLoading 才能关闭提示框",
+       "funcProto": "wx.showLoading(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.hideToast",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html#wxhidetoast",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "交互反馈",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       }
+      ],
+      "detail": {
+       "description": "隐藏消息提示框",
+       "funcProto": "wx.hideToast()"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.hideLoading",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html#wxhideloading",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "交互反馈",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       }
+      ],
+      "detail": {
+       "description": "隐藏 loading 提示框",
+       "funcProto": "wx.hideLoading()",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.showModal",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html#wxshowmodalobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "交互反馈",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       }
+      ],
+      "detail": {
+       "description": "​显示模态弹窗",
+       "funcProto": "wx.showModal(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.showActionSheet",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html#wxshowactionsheetobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "交互反馈",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       }
+      ],
+      "detail": {
+       "description": "​显示操作菜单",
+       "funcProto": "wx.showActionSheet(OBJECT)"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "设置导航条",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.setNavigationBarTitle",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui.html#wxsetnavigationbartitleobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "设置导航条",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui.html"
+       }
+      ],
+      "detail": {
+       "description": "动态设置当前页面的标题。",
+       "funcProto": "wx.setNavigationBarTitle(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.showNavigationBarLoading",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui.html#wxshownavigationbarloading",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "设置导航条",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui.html"
+       }
+      ],
+      "detail": {
+       "description": "在当前页面显示导航条加载动画。",
+       "funcProto": "wx.showNavigationBarLoading()"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.hideNavigationBarLoading",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui.html#wxhidenavigationbarloading",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "设置导航条",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui.html"
+       }
+      ],
+      "detail": {
+       "description": "隐藏导航条加载动画。",
+       "funcProto": "wx.hideNavigationBarLoading()"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.setNavigationBarColor",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/setNavigationBarColor.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "设置导航条",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui.html"
+       }
+      ],
+      "detail": {
+       "description": "OBJECT参数说明：",
+       "funcProto": "wx.setNavigationBarColor(OBJECT)",
+       "minVersion": "1.4.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "设置tabBar",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.setTabBarBadge",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html#wxsettabbarbadgeobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "设置tabBar",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html"
+       }
+      ],
+      "detail": {
+       "description": "为 tabBar 某一项的右上角添加文本",
+       "funcProto": "wx.setTabBarBadge(OBJECT)",
+       "minVersion": "1.9.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.removeTabBarBadge",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html#wxremovetabbarbadgeobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "设置tabBar",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html"
+       }
+      ],
+      "detail": {
+       "description": "移除 tabBar 某一项右上角的文本",
+       "funcProto": "wx.removeTabBarBadge(OBJECT)",
+       "minVersion": "1.9.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.showTabBarRedDot",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html#wxshowtabbarreddotobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "设置tabBar",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html"
+       }
+      ],
+      "detail": {
+       "description": "显示 tabBar 某一项的右上角的红点",
+       "funcProto": "wx.showTabBarRedDot(OBJECT)",
+       "minVersion": "1.9.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.hideTabBarRedDot",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html#wxhidetabbarreddotobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "设置tabBar",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html"
+       }
+      ],
+      "detail": {
+       "description": "隐藏 tabBar 某一项的右上角的红点",
+       "funcProto": "wx.hideTabBarRedDot(OBJECT)",
+       "minVersion": "1.9.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.setTabBarStyle",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html#wxsettabbarstyleobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "设置tabBar",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html"
+       }
+      ],
+      "detail": {
+       "description": "动态设置 tabBar 的整体样式",
+       "funcProto": "wx.setTabBarStyle(OBJECT)",
+       "minVersion": "1.9.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.setTabBarItem",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html#wxsettabbaritemobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "设置tabBar",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html"
+       }
+      ],
+      "detail": {
+       "description": "动态设置 tabBar 某一项的内容",
+       "funcProto": "wx.setTabBarItem(OBJECT)",
+       "minVersion": "1.9.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.showTabBar",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html#wxshowtabbarobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "设置tabBar",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html"
+       }
+      ],
+      "detail": {
+       "description": "显示 tabBar 某一项的右上角的红点",
+       "funcProto": "wx.showTabBarRedDot(OBJECT)",
+       "minVersion": "1.9.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.hideTabBar",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html#wxhidetabbarobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "设置tabBar",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html"
+       }
+      ],
+      "detail": {
+       "description": "隐藏 tabBar 某一项的右上角的红点",
+       "funcProto": "wx.hideTabBarRedDot(OBJECT)",
+       "minVersion": "1.9.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "设置置顶信息",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui.html#wxsettopbartextobject",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.setTopBarText",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui.html#wxsettopbartextobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "设置置顶信息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui.html#wxsettopbartextobject"
+       }
+      ],
+      "detail": {
+       "description": "动态设置置顶栏文字内容，只有当前小程序被置顶时能生效，如果当前小程序没有被置顶，也能调用成功，但是不会立即生效，只有在用户将这个小程序置顶后才换上设置的文字内容。注意：调用成功后，需间隔 5s 才能再次调用此接口，如果在 5s 内再次调用此接口，会回调 fail，errMsg：\"setTopBarText: fail invoke too frequently\"",
+       "funcProto": "wx.setTopBarText(OBJECT)",
+       "minVersion": "1.4.3"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "导航",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-navigate.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.navigateTo",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-navigate.html#wxnavigatetoobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "导航",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-navigate.html"
+       }
+      ],
+      "detail": {
+       "description": "保留当前页面，跳转到应用内的某个页面，使用wx.navigateBack可以返回到原页面。",
+       "funcProto": "wx.navigateTo(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.redirectTo",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-navigate.html#wxredirecttoobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "导航",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-navigate.html"
+       }
+      ],
+      "detail": {
+       "description": "关闭当前页面，跳转到应用内的某个页面。",
+       "funcProto": "wx.redirectTo(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.switchTab",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-navigate.html#wxswitchtabobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "导航",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-navigate.html"
+       }
+      ],
+      "detail": {
+       "description": "跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面",
+       "funcProto": "wx.switchTab(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.navigateBack",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-navigate.html#wxnavigatebackobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "导航",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-navigate.html"
+       }
+      ],
+      "detail": {
+       "description": "关闭当前页面，返回上一页面或多级页面。可通过 getCurrentPages()) 获取当前的页面栈，决定需要返回几层。",
+       "funcProto": "wx.navigateBack(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.reLaunch",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-navigate.html#wxrelaunchobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "导航",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-navigate.html"
+       }
+      ],
+      "detail": {
+       "description": "关闭所有页面，打开到应用内的某个页面。",
+       "funcProto": "wx.reLaunch(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "动画",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-animation.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.createAnimation",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-animation.html#wxcreateanimationobject",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "动画",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-animation.html"
+       }
+      ],
+      "detail": {
+       "description": "创建一个动画实例animation。调用实例的方法来描述动画。最后通过动画实例的export方法导出动画数据传递给组件的animation属性。",
+       "funcProto": "wx.createAnimation(OBJECT)"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "位置",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/scroll.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.pageScrollTo",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/scroll.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "位置",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/scroll.html"
+       }
+      ],
+      "detail": {
+       "description": "将页面滚动到目标位置。",
+       "funcProto": "wx.pageScrollTo(OBJECT)",
+       "minVersion": "1.4.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "绘图",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "intro",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/intro.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "coordinates",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/coordinates.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "gradient",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/gradient.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "reference",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "color",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/color.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "wx.createCanvasContext",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/create-canvas-context.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "wx.createContext",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/create-context.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "wx.drawCanvas",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/draw-canvas.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "wx.canvasToTempFilePath",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/temp-file.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "wx.canvasGetImageData",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/get-image-data.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "wx.canvasPutImageData",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/put-image-data.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "setFillStyle",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/set-fill-style.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "setStrokeStyle",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/set-stroke-style.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "setShadow",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/set-shadow.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "createLinearGradient",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/create-linear-gradient.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "createCircularGradient",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/create-circular-gradient.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "addColorStop",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/add-color-stop.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "setLineWidth",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/set-line-width.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "setLineCap",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/set-line-cap.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "setLineJoin",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/set-line-join.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "setLineDash",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/set-line-dash.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "setMiterLimit",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/set-miter-limit.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "rect",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/rect.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "fillRect",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/fill-rect.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "strokeRect",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/stroke-rect.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "clearRect",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/clear-rect.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "fill",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/fill.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "stroke",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/stroke.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "beginPath",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/begin-path.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "closePath",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/close-path.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "moveTo",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/move-to.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "lineTo",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/line-to.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "arc",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/arc.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "bezierCurveTo",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/bezier-curve-to.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "quadraticCurveTo",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/quadratic-curve-to.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "scale",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/scale.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "rotate",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/rotate.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "translate",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/translate.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "clip",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/clip.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "setFontSize",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/set-font-size.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "fillText",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/fill-text.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "setTextAlign",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/set-text-align.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "setTextBaseline",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/set-text-baseline.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "drawImage",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/draw-image.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "setGlobalAlpha",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/set-global-alpha.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "save",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/save-restore.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "restore",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/save-restore.html#restore",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "draw",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/draw.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "getActions",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/get-actions.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "clearActions",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/clear-actions.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "measureText",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/measure-text.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "globalCompositeOperation",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/global-composite-operation.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "arcTo",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/arc-to.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "strokeText",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/stroke-text.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "lineDashOffset",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/line-dash-offset.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "createPattern",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/create-pattern.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "shadowBlur",
+      "url": null
+     },
+     {
+      "type": "item",
+      "name": "shadowColor",
+      "url": null
+     },
+     {
+      "type": "item",
+      "name": "shadowOffsetX",
+      "url": null
+     },
+     {
+      "type": "item",
+      "name": "shadowOffsetY",
+      "url": null
+     },
+     {
+      "type": "item",
+      "name": "font",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/font.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "transform",
+      "url": null
+     },
+     {
+      "type": "item",
+      "name": "setTransform",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/set-transform.html",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "绘图",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "下拉刷新",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/pulldown.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "Page.onPullDownRefresh",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/pulldown.html#onpulldownrefresh",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "下拉刷新",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/pulldown.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "wx.startPullDownRefresh",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/pulldown.html#wxstartpulldownrefresh",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "下拉刷新",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/pulldown.html"
+       }
+      ],
+      "detail": {
+       "description": "开始下拉刷新，调用后触发下拉刷新动画，效果与用户手动下拉刷新一致",
+       "funcProto": "wx.startPullDownRefresh(OBJECT)",
+       "minVersion": "1.5.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.stopPullDownRefresh",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/pulldown.html#wxstoppulldownrefresh",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "下拉刷新",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/pulldown.html"
+       }
+      ],
+      "detail": {
+       "description": "停止当前页面下拉刷新。",
+       "funcProto": "wx.stopPullDownRefresh()"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "WXML节点信息",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.createSelectorQuery",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html#wxcreateselectorquery",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "WXML节点信息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "selectorQuery.in",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html#selectorqueryincomponent",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "WXML节点信息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html"
+       }
+      ],
+      "detail": {
+       "description": "将选择器的选取范围更改为自定义组件component内。（初始时，选择器仅选取页面范围的节点，不会选取任何自定义组件中的节点。）",
+       "funcProto": "selectorQuery.in(component)",
+       "minVersion": "1.6.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "selectorQuery.select",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html#selectorqueryselectselector",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "WXML节点信息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html"
+       }
+      ],
+      "detail": {
+       "description": "在当前页面下选择第一个匹配选择器selector的节点，返回一个NodesRef对象实例，可以用于获取节点信息。",
+       "funcProto": "selectorQuery.select(selector)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "selectorQuery.selectAll",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html#selectorqueryselectallselector",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "WXML节点信息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html"
+       }
+      ],
+      "detail": {
+       "description": "在当前页面下选择匹配选择器selector的节点，返回一个NodesRef对象实例。\n与selectorQuery.selectNode(selector)不同的是，它选择所有匹配选择器的节点。",
+       "funcProto": "selectorQuery.selectAll(selector)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "selectorQuery.selectViewport",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html#selectorqueryselectviewport",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "WXML节点信息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html"
+       }
+      ],
+      "detail": {
+       "description": "选择显示区域，可用于获取显示区域的尺寸、滚动位置等信息，返回一个NodesRef对象实例。",
+       "funcProto": "selectorQuery.selectViewport()"
+      }
+     },
+     {
+      "type": "item",
+      "name": "nodesRef.boundingClientRect",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html#nodesrefboundingclientrectcallback",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "WXML节点信息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html"
+       }
+      ],
+      "detail": {
+       "description": "添加节点的布局位置的查询请求，相对于显示区域，以像素为单位。其功能类似于DOM的getBoundingClientRect。返回值是nodesRef对应的selectorQuery。",
+       "funcProto": "nodesRef.boundingClientRect([callback])"
+      }
+     },
+     {
+      "type": "item",
+      "name": "nodesRef.scrollOffset",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html#nodesrefscrolloffsetcallback",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "WXML节点信息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html"
+       }
+      ],
+      "detail": {
+       "description": "添加节点的滚动位置查询请求，以像素为单位。节点必须是scroll-view或者viewport。返回值是nodesRef对应的selectorQuery。",
+       "funcProto": "nodesRef.scrollOffset([callback])"
+      }
+     },
+     {
+      "type": "item",
+      "name": "nodesRef.fields",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html#nodesreffieldsfieldscallback",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "WXML节点信息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html"
+       }
+      ],
+      "detail": {
+       "description": "获取节点的相关信息，需要获取的字段在fields中指定。返回值是nodesRef对应的selectorQuery。可指定获取的字段包括：",
+       "funcProto": "nodesRef.fields(fields, [callback])"
+      }
+     },
+     {
+      "type": "item",
+      "name": "selectorQuery.exec",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html#selectorqueryexeccallback",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "WXML节点信息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html"
+       }
+      ],
+      "detail": {
+       "description": "执行所有的请求，请求结果按请求次序构成数组，在callback的第一个参数中返回。",
+       "funcProto": "selectorQuery.exec([callback])"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "WXML节点布局相交状态",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/intersection-observer.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.createIntersectionObserver",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/intersection-observer.html#wxcreateintersectionobserverthisoptions",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "WXML节点布局相交状态",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/intersection-observer.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "intersectionObserver.relativeTo",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/intersection-observer.html#intersectionobserverrelativetoselectormargins",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "WXML节点布局相交状态",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/intersection-observer.html"
+       }
+      ],
+      "detail": {
+       "description": "使用选择器指定一个节点，作为参照区域之一。 margins 可以用来扩展（或收缩）参照节点布局区域的边界，可包含 left 、 right 、 top 、 bottom 四项。",
+       "funcProto": "intersectionObserver.relativeTo(selector, [margins])"
+      }
+     },
+     {
+      "type": "item",
+      "name": "intersectionObserver.relativeToViewport",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/intersection-observer.html#intersectionobserverrelativetoviewportmargins",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "WXML节点布局相交状态",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/intersection-observer.html"
+       }
+      ],
+      "detail": {
+       "description": "指定页面显示区域作为参照区域之一。 margins 可以用来扩展（或收缩）参照节点布局区域的边界，可包含 left 、 right 、 top 、 bottom 四项。",
+       "funcProto": "intersectionObserver.relativeToViewport([margins])"
+      }
+     },
+     {
+      "type": "item",
+      "name": "intersectionObserver.observe",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/intersection-observer.html#intersectionobserverobservetargetselectorcallback",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "WXML节点布局相交状态",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/intersection-observer.html"
+       }
+      ],
+      "detail": {
+       "description": "指定目标节点并开始监听相交状态变化情况。回调函数 callback 包含一个参数 result 。",
+       "funcProto": "intersectionObserver.observe(targetSelector, callback)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "intersectionObserver.disconnect",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/intersection-observer.html#intersectionobserverdisconnect",
+      "categoryLevel": [
+       {
+        "name": "界面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html"
+       },
+       {
+        "name": "WXML节点布局相交状态",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/intersection-observer.html"
+       }
+      ],
+      "detail": {
+       "description": "停止监听。回调函数将不再触发。",
+       "funcProto": "intersectionObserver.disconnect()"
+      }
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "第三方平台",
+  "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ext-api.html",
+  "children": [
+   {
+    "type": "item",
+    "name": "wx.getExtConfig",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ext-api.html#wxgetextconfigobject",
+    "categoryLevel": [
+     {
+      "name": "第三方平台",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ext-api.html"
+     }
+    ],
+    "detail": {
+     "description": "获取第三方平台自定义的数据字段。",
+     "funcProto": "wx.getExtConfig(OBJECT)",
+     "minVersion": "1.1.0"
+    }
+   },
+   {
+    "type": "item",
+    "name": "wx.getExtConfigSync",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ext-api.html#wxgetextconfigsync",
+    "categoryLevel": [
+     {
+      "name": "第三方平台",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ext-api.html"
+     }
+    ],
+    "detail": {
+     "description": "获取第三方平台自定义的数据字段的同步接口。",
+     "funcProto": "wx.getExtConfigSync()",
+     "minVersion": "1.1.0"
+    }
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "开放接口",
+  "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html",
+  "children": [
+   {
+    "type": "category",
+    "name": "登录",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.login",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html#wxloginobject",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "登录",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       }
+      ],
+      "detail": {
+       "description": "调用接口wx.login() 获取临时登录凭证（code）",
+       "funcProto": "wx.login(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.checkSession",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html#wxchecksessionobject",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "登录",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "签名加密",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/signature.html",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "登录",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "授权",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/authorize-index.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.authorize",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/authorize.html#wxauthorizeobject",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "授权",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/authorize-index.html"
+       }
+      ],
+      "detail": {
+       "description": "提前向用户发起授权请求。调用后会立刻弹窗询问用户是否同意授权小程序使用某项功能或获取用户的某些数据，但不会实际调用对应接口。如果用户之前已经同意授权，则不会出现弹窗，直接返回成功。",
+       "funcProto": "wx.authorize(OBJECT)",
+       "minVersion": "1.2.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "用户信息",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/open.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getUserInfo",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/open.html#wxgetuserinfoobject",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "用户信息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/open.html"
+       }
+      ],
+      "detail": {
+       "description": "获取用户信息，withCredentials 为 true 时需要先调用 wx.login 接口。",
+       "funcProto": "wx.getUserInfo(OBJECT)"
+      }
+     },
+     {
+      "type": "item",
+      "name": "getPhoneNumber",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/getPhoneNumber.html",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "用户信息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/open.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "UnionID机制说明",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/uinionID.html",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "用户信息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/open.html"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "微信支付",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-pay.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.requestPayment",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-pay.html#wxrequestpaymentobject",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "微信支付",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-pay.html"
+       }
+      ],
+      "detail": {
+       "description": "发起微信支付。",
+       "funcProto": "wx.requestPayment(OBJECT)"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "模板消息",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/notice.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "使用说明",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/notice.html#使用说明",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "模板消息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/notice.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "模版消息管理",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/notice.html#模版消息管理",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "模板消息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/notice.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "发送模板消息",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/notice.html#发送模板消息",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "模板消息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/notice.html"
+       }
+      ],
+      "detail": {
+       "description": "接口地址：(ACCESS_TOKEN 需换成上文获取到的 access_token)",
+       "funcProto": "发送模板消息"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "客服消息",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html",
+    "children": [
+     {
+      "type": "category",
+      "name": "接收消息和事件",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html#接收消息和事件",
+      "children": [
+       {
+        "type": "item",
+        "name": "文本消息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html#文本消息",
+        "categoryLevel": [
+         {
+          "name": "开放接口",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+         },
+         {
+          "name": "客服消息",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html"
+         },
+         {
+          "name": "接收消息和事件",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html#接收消息和事件"
+         }
+        ],
+        "detail": {
+         "description": "用户在客服会话中发送文本消息时将产生如下数据包：",
+         "funcProto": "文本消息"
+        }
+       },
+       {
+        "type": "item",
+        "name": "图片消息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html#图片消息",
+        "categoryLevel": [
+         {
+          "name": "开放接口",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+         },
+         {
+          "name": "客服消息",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html"
+         },
+         {
+          "name": "接收消息和事件",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html#接收消息和事件"
+         }
+        ],
+        "detail": {
+         "description": "用户在客服会话中发送图片消息时将产生如下数据包：",
+         "funcProto": "图片消息"
+        }
+       },
+       {
+        "type": "item",
+        "name": "小程序卡片消息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html#小程序卡片消息",
+        "categoryLevel": [
+         {
+          "name": "开放接口",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+         },
+         {
+          "name": "客服消息",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html"
+         },
+         {
+          "name": "接收消息和事件",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html#接收消息和事件"
+         }
+        ],
+        "detail": {
+         "description": "用户在客服会话中发送小程序卡片消息时将产生如下数据包：",
+         "funcProto": "小程序卡片消息"
+        }
+       },
+       {
+        "type": "item",
+        "name": "进入会话事件",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html#进入会话事件",
+        "categoryLevel": [
+         {
+          "name": "开放接口",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+         },
+         {
+          "name": "客服消息",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html"
+         },
+         {
+          "name": "接收消息和事件",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html#接收消息和事件"
+         }
+        ],
+        "detail": {
+         "description": "用户在小程序“客服会话按钮”进入客服会话时将产生如下数据包：",
+         "funcProto": "进入会话事件"
+        }
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "发送客服消息",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/conversation.html",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "客服消息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html"
+       }
+      ],
+      "detail": {
+       "description": "当用户和小程序客服产生特定动作的交互时（具体动作列表请见下方说明），微信将会把消息数据推送给开发者，开发者可以在一段时间内（目前修改为48小时）调用客服接口，通过POST一个JSON数据包来发送消息给普通用户。此接口主要用于客服等有人工消息处理环节的功能，方便开发者为用户提供更加优质的服务。",
+       "funcProto": "发送客服消息"
+      }
+     },
+     {
+      "type": "item",
+      "name": "转发消息",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/trans.html",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "客服消息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html"
+       }
+      ],
+      "detail": {
+       "description": "如果小程序设置了消息推送，普通微信用户向小程序客服发消息时，微信服务器会先将消息 POST 到开发者填写的 url 上，如果希望将消息转发到网页版客服工具，则需要开发者在响应包中返回 MsgType 为 transfer_customer_service 的消息，微信服务器收到响应后会把当次发送的消息转发至客服系统。",
+       "funcProto": "转发消息"
+      }
+     },
+     {
+      "type": "category",
+      "name": "临时素材接口",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/material.html",
+      "children": [
+       {
+        "type": "item",
+        "name": "获取临时素材",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/material.html#获取临时素材",
+        "categoryLevel": [
+         {
+          "name": "开放接口",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+         },
+         {
+          "name": "客服消息",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html"
+         },
+         {
+          "name": "临时素材接口",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/material.html"
+         }
+        ],
+        "detail": {
+         "description": "小程序可以使用本接口获取客服消息内的临时素材（即下载临时的多媒体文件）。目前小程序仅支持下载图片文件。",
+         "funcProto": "获取临时素材"
+        }
+       },
+       {
+        "type": "item",
+        "name": "新增临时素材",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/material.html#新增临时素材",
+        "categoryLevel": [
+         {
+          "name": "开放接口",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+         },
+         {
+          "name": "客服消息",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html"
+         },
+         {
+          "name": "临时素材接口",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/material.html"
+         }
+        ],
+        "detail": {
+         "description": "小程序可以使用本接口把媒体文件（目前仅支持图片）上传到微信服务器，用户发送客服消息或被动回复用户消息。",
+         "funcProto": "新增临时素材"
+        }
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "客服输入状态",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/typing.html",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "客服消息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html"
+       }
+      ],
+      "detail": {
+       "description": "开发者可通过调用“客服输入状态接口”，返回客服当前输入状态给用户。",
+       "funcProto": "客服输入状态"
+      }
+     },
+     {
+      "type": "item",
+      "name": "接入指引",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/callback_help.html",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "客服消息",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/custommsg/receive.html"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "转发",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/share.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "Page.onShareAppMessage",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/share.html#onshareappmessageoptions",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "转发",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/share.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "wx.showShareMenu",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/share.html#wxshowsharemenuobject",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "转发",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/share.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "wx.hideShareMenu",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/share.html#wxhidesharemenuobject",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "转发",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/share.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "wx.updateShareMenu",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/share.html#wxupdatesharemenuobject",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "转发",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/share.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "wx.getShareInfo",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/share.html#wxgetshareinfoobject",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "转发",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/share.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "获取更多转发信息",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/share.html#获取更多转发信息",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "转发",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/share.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "页面内发起转发",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/share.html#页面内发起转发",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "转发",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/share.html"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "item",
+    "name": "获取二维码",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/qrcode.html",
+    "categoryLevel": [
+     {
+      "name": "开放接口",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "收货地址",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/address.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.chooseAddress",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/address.html#wxchooseaddressobject",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "收货地址",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/address.html"
+       }
+      ],
+      "detail": {
+       "description": "调起用户编辑收货地址原生界面，并在编辑完成后返回用户选择的地址。",
+       "funcProto": "wx.chooseAddress(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "卡券",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/card.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.addCard",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/card.html#wxaddcardobject",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "卡券",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/card.html"
+       }
+      ],
+      "detail": {
+       "description": "批量添加卡券。",
+       "funcProto": "wx.addCard(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.openCard",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/card.html#wxopencardobject",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "卡券",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/card.html"
+       }
+      ],
+      "detail": {
+       "description": "查看微信卡包中的卡券。",
+       "funcProto": "wx.openCard(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "会员卡组件",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/card.html#会员卡组件",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "卡券",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/card.html"
+       }
+      ],
+      "detail": {
+       "description": "开发者可以在小程序内调用该接口拉起会员开卡组件，方便用户快速填写会员注册信息并领卡。\n该接口拉起开卡组件无须提前将开卡组件和发起小程序绑定至同一个公众号，开发者直接调用即可。",
+       "funcProto": "会员卡组件"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "设置",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/setting.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.openSetting",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/setting.html#wxopensettingobject",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "设置",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/setting.html"
+       }
+      ],
+      "detail": {
+       "description": "调起客户端小程序设置界面，返回用户设置的操作结果。",
+       "funcProto": "wx.openSetting(OBJECT)",
+       "minVersion": "1.1.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.getSetting",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/setting.html#wxgetsettingobject",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "设置",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/setting.html"
+       }
+      ],
+      "detail": {
+       "description": "获取用户的当前设置。",
+       "funcProto": "wx.getSetting(OBJECT)",
+       "minVersion": "1.2.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "微信运动",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/we-run.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.getWeRunData",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/we-run.html#wxgetwerundataobject",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "微信运动",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/we-run.html"
+       }
+      ],
+      "detail": {
+       "description": "获取用户过去三十天微信运动步数，需要先调用 wx.login 接口。",
+       "funcProto": "wx.getWeRunData(OBJECT)",
+       "minVersion": "1.2.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "打开小程序",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/navigateToMiniProgram.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.navigateToMiniProgram",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/navigateToMiniProgram.html",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "打开小程序",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/navigateToMiniProgram.html"
+       }
+      ],
+      "detail": {
+       "description": "打开同一公众号下关联的另一个小程序。（注：必须是同一公众号下，而非同个 open 账号下）",
+       "funcProto": "wx.navigateToMiniProgram(OBJECT)",
+       "minVersion": "1.3.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.navigateBackMiniProgram",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/navigateBackMiniProgram.html",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "打开小程序",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/navigateToMiniProgram.html"
+       }
+      ],
+      "detail": {
+       "description": "返回到上一个小程序，只有在当前小程序是被其他小程序打开时可以调用成功",
+       "funcProto": "wx.navigateBackMiniProgram(OBJECT)",
+       "minVersion": "1.3.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "打开APP",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/launchApp.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "launchApp",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/launchApp.html",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "打开APP",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/launchApp.html"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "获取发票抬头",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/chooseInvoiceTitle.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.chooseInvoiceTitle",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/chooseInvoiceTitle.html",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "获取发票抬头",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/chooseInvoiceTitle.html"
+       }
+      ],
+      "detail": {
+       "description": "选择用户的发票抬头。",
+       "funcProto": "wx.chooseInvoiceTitle(OBJECT)",
+       "minVersion": "1.5.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "生物认证",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/checkIsSupportSoterAuthentication.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "wx.checkIsSupportSoterAuthentication",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/checkIsSupportSoterAuthentication.html",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "生物认证",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/checkIsSupportSoterAuthentication.html"
+       }
+      ],
+      "detail": {
+       "description": "获取本机支持的 SOTER 生物认证方式",
+       "funcProto": "wx.checkIsSupportSoterAuthentication(OBJECT)",
+       "minVersion": "1.5.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.startSoterAuthentication",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/startSoterAuthentication.html",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "生物认证",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/checkIsSupportSoterAuthentication.html"
+       }
+      ],
+      "detail": {
+       "description": "开始 SOTER 生物认证",
+       "funcProto": "wx.startSoterAuthentication(OBJECT)",
+       "minVersion": "1.5.0"
+      }
+     },
+     {
+      "type": "item",
+      "name": "wx.checkIsSoterEnrolledInDevice",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/checkIsSoterEnrolledInDevice.html",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "生物认证",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/checkIsSupportSoterAuthentication.html"
+       }
+      ],
+      "detail": {
+       "description": "获取设备内是否录入如指纹等生物信息的接口",
+       "funcProto": "wx.checkIsSoterEnrolledInDevice(OBJECT)",
+       "minVersion": "1.6.0"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "附近",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nearby.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "添加地点",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nearby.html#添加地点",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "附近",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nearby.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "查看地点列表",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nearby.html#查看地点列表",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "附近",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nearby.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "删除地点",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nearby.html#删除地点",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "附近",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nearby.html"
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "展示/取消展示附近小程序",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nearby.html#展示取消展示附近小程序",
+      "categoryLevel": [
+       {
+        "name": "开放接口",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html"
+       },
+       {
+        "name": "附近",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nearby.html"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "数据",
+  "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html",
+  "children": [
+   {
+    "type": "category",
+    "name": "常规分析",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html",
+    "children": [
+     {
+      "type": "category",
+      "name": "概况",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html#概况",
+      "children": [
+       {
+        "type": "item",
+        "name": "概况趋势",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html#概况趋势",
+        "categoryLevel": [
+         {
+          "name": "数据",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html"
+         },
+         {
+          "name": "常规分析",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html"
+         },
+         {
+          "name": "概况",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html#概况"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "category",
+      "name": "访问分析",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis-visit.html",
+      "children": [
+       {
+        "type": "item",
+        "name": "访问趋势",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis-visit.html#访问趋势",
+        "categoryLevel": [
+         {
+          "name": "数据",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html"
+         },
+         {
+          "name": "常规分析",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html"
+         },
+         {
+          "name": "访问分析",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis-visit.html"
+         }
+        ]
+       },
+       {
+        "type": "item",
+        "name": "访问分布",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis-visit.html#访问分布",
+        "categoryLevel": [
+         {
+          "name": "数据",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html"
+         },
+         {
+          "name": "常规分析",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html"
+         },
+         {
+          "name": "访问分析",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis-visit.html"
+         }
+        ]
+       },
+       {
+        "type": "item",
+        "name": "访问留存",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis-visit.html#访问留存",
+        "categoryLevel": [
+         {
+          "name": "数据",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html"
+         },
+         {
+          "name": "常规分析",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html"
+         },
+         {
+          "name": "访问分析",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis-visit.html"
+         }
+        ]
+       },
+       {
+        "type": "item",
+        "name": "访问页面",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis-visit.html#访问页面",
+        "categoryLevel": [
+         {
+          "name": "数据",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html"
+         },
+         {
+          "name": "常规分析",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html"
+         },
+         {
+          "name": "访问分析",
+          "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis-visit.html"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "type": "item",
+      "name": "用户画像",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis-user.html",
+      "categoryLevel": [
+       {
+        "name": "数据",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html"
+       },
+       {
+        "name": "常规分析",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html"
+       }
+      ],
+      "detail": {
+       "description": "获取小程序新增或活跃用户的画像分布数据。时间范围支持昨天、最近7天、最近30天。其中，新增用户数为时间范围内首次访问小程序的去重用户数，活跃用户数为时间范围内访问过小程序的去重用户数。画像属性包括用户年龄、性别、省份、城市、终端类型、机型。",
+       "funcProto": "用户画像"
+      }
+     }
+    ]
+   },
+   {
+    "type": "category",
+    "name": "自定义分析",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis-report.html",
+    "children": [
+     {
+      "type": "item",
+      "name": "自定义数据上报",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis-report.html",
+      "categoryLevel": [
+       {
+        "name": "数据",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis.html"
+       },
+       {
+        "name": "自定义分析",
+        "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/analysis-report.html"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "更新",
+  "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/getUpdateManager.html",
+  "children": [
+   {
+    "type": "item",
+    "name": "wx.getUpdateManager",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/getUpdateManager.html",
+    "categoryLevel": [
+     {
+      "name": "更新",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/getUpdateManager.html"
+     }
+    ],
+    "detail": {
+     "description": "获取全局唯一的版本更新管理器，用于管理小程序更新。",
+     "funcProto": "wx.getUpdateManager()",
+     "minVersion": "1.9.90"
+    }
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "多线程",
+  "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/createWorker.html",
+  "children": [
+   {
+    "type": "item",
+    "name": "wx.createWorker",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/createWorker.html",
+    "categoryLevel": [
+     {
+      "name": "多线程",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/createWorker.html"
+     }
+    ],
+    "detail": {
+     "description": "在使用 createWorker 前，请查阅 多线程 文档了解基础知识和配置方法。",
+     "funcProto": "wx.createWorker(scriptPath)",
+     "minVersion": "1.9.90"
+    }
+   }
+  ]
+ },
+ {
+  "type": "category",
+  "name": "调试接口",
+  "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/setEnableDebug.html",
+  "children": [
+   {
+    "type": "item",
+    "name": "打开/关闭调试",
+    "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/setEnableDebug.html",
+    "categoryLevel": [
+     {
+      "name": "调试接口",
+      "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/setEnableDebug.html"
+     }
+    ]
+   }
+  ]
+ }
+]
