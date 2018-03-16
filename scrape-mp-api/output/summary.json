@@ -32,7 +32,9 @@
       "type": "item",
       "description": "中断请求任务",
       "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/request/RequestTask.abort.html?t=201832",
-      "game": {}
+      "game": {
+       "minVersion": "1.4.0"
+      }
      }
     ],
     "subCnt": 3
@@ -136,7 +138,9 @@
       "type": "item",
       "description": "WebSocket 任务，可通过 wx.connectSocket() 接口创建返回。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/socket-task.html",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.7.0"
+      },
       "game": {}
      },
      {
@@ -201,14 +205,18 @@
       "type": "item",
       "description": "中断下载任务",
       "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/download/DownloadTask.abort.html?t=201832",
-      "game": {}
+      "game": {
+       "minVersion": "1.4.0"
+      }
      },
      {
       "name": "DownloadTask.onProgressUpdate",
       "type": "item",
       "description": "监听下载进度变化事件",
       "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/download/DownloadTask.onProgressUpdate.html?t=201832",
-      "game": {}
+      "game": {
+       "minVersion": "1.4.0"
+      }
      }
     ],
     "subCnt": 3
@@ -230,14 +238,18 @@
       "type": "item",
       "description": "中断上传任务",
       "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/upload/UploadTask.abort.html?t=201832",
-      "game": {}
+      "game": {
+       "minVersion": "1.4.0"
+      }
      },
      {
       "name": "UploadTask.onProgressUpdate",
       "type": "item",
       "description": "监听上传进度变化事件",
       "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/network/upload/UploadTask.onProgressUpdate.html?t=201832",
-      "game": {}
+      "game": {
+       "minVersion": "1.4.0"
+      }
      }
     ],
     "subCnt": 3
@@ -294,7 +306,9 @@
       "type": "item",
       "description": "保存图片到系统相册。需要用户授权 scope.writePhotosAlbum",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-picture.html#wxsaveimagetophotosalbumobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.2.0"
+      },
       "game": {},
       "plugin": {
        "minVersion": "1.9.6"
@@ -420,7 +434,9 @@
       "type": "item",
       "description": "获取全局唯一的录音管理器 recorderManager。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/getRecorderManager.html",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.6.0"
+      },
       "game": {},
       "plugin": {
        "minVersion": "1.9.94"
@@ -568,7 +584,9 @@
       "type": "item",
       "description": "获取全局唯一的背景音频管理器 backgroundAudioManager。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/getBackgroundAudioManager.html",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.2.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -596,7 +614,9 @@
       "type": "item",
       "description": "创建并返回内部 audio 上下文 innerAudioContext 对象。本接口是 wx.createAudioContext 升级版。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/createInnerAudioContext.html",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.6.0"
+      },
       "game": {},
       "plugin": {
        "minVersion": "1.9.6"
@@ -625,7 +645,9 @@
       "type": "item",
       "description": "保存视频到系统相册。需要用户授权 scope.writePhotosAlbum",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/media-video.html#wxsavevideotophotosalbumobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.2.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -801,7 +823,9 @@
       "type": "item",
       "description": "创建并返回 camera 上下文 cameraContext 对象，cameraContext 与页面的 camera 组件绑定，一个页面只能有一个camera，通过它可以操作对应的 <camera/> 组件。\n在自定义组件下，第一个参数传入组件实例this，以操作组件内 <camera/> 组件",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-camera.html",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.6.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -819,7 +843,9 @@
       "type": "item",
       "description": "操作对应的 <live-player/> 组件。\n创建并返回 live-player 上下文 LivePlayerContext 对象。在自定义组件下，第二个参数传入组件实例this，以操作组件内 <live-player/> 组件",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-live-player.html",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.7.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -829,7 +855,9 @@
       "type": "item",
       "description": "创建并返回 live-pusher 上下文 LivePusherContext 对象，LivePusherContext 与页面的 <live-pusher /> 组件绑定，一个页面只能有一个 live-pusher，通过它可以操作对应的 <live-pusher/> 组件。\n在自定义组件下，第一个参数传入组件实例this，以操作组件内 <live-pusher/> 组件",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-live-pusher.html",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.7.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1040,7 +1068,9 @@
     "type": "item",
     "description": "获取文件信息",
     "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/getFileInfo.html",
-    "mp": {}
+    "mp": {
+     "minVersion": "1.4.0"
+    }
    },
    {
     "name": "wx.getSavedFileList",
@@ -1535,7 +1565,9 @@
       "type": "item",
       "description": "监听网络状态变化。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxonnetworkstatuschangecallback",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "game": {},
       "plugin": {
        "minVersion": "1.9.6"
@@ -1565,7 +1597,9 @@
       "type": "item",
       "description": "开始监听加速度数据。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/accelerometer.html#wxstartaccelerometerobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "game": {},
       "plugin": {
        "minVersion": "1.9.6"
@@ -1576,7 +1610,9 @@
       "type": "item",
       "description": "停止监听加速度数据。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/accelerometer.html#wxstopaccelerometerobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "game": {},
       "plugin": {
        "minVersion": "1.9.6"
@@ -1606,7 +1642,9 @@
       "type": "item",
       "description": "开始监听罗盘数据。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/compass.html#wxstartcompassobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "game": {},
       "plugin": {
        "minVersion": "1.9.6"
@@ -1617,7 +1655,9 @@
       "type": "item",
       "description": "停止监听罗盘数据。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/compass.html#wxstopcompassobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "game": {},
       "plugin": {
        "minVersion": "1.9.6"
@@ -1672,7 +1712,9 @@
       "type": "item",
       "description": "设置系统剪贴板的内容",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/clipboard.html#wxsetclipboarddataobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "game": {},
       "plugin": {
        "minVersion": "1.9.6"
@@ -1683,7 +1725,9 @@
       "type": "item",
       "description": "获取系统剪贴板内容",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/clipboard.html#wxgetclipboarddataobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "game": {},
       "plugin": {
        "minVersion": "1.9.6"
@@ -1702,7 +1746,9 @@
       "type": "item",
       "description": "初始化小程序蓝牙模块，生效周期为调用wx.openBluetoothAdapter至调用wx.closeBluetoothAdapter或小程序被销毁为止。\n在小程序蓝牙适配器模块生效期间，开发者可以正常调用下面的小程序API，并会收到蓝牙模块相关的on回调。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxopenbluetoothadapterobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1712,7 +1758,9 @@
       "type": "item",
       "description": "关闭蓝牙模块，使其进入未初始化状态。调用该方法将断开所有已建立的链接并释放系统资源。建议在使用小程序蓝牙流程后调用，与wx.openBluetoothAdapter成对调用。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxclosebluetoothadapterobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1722,7 +1770,9 @@
       "type": "item",
       "description": "获取本机蓝牙适配器状态",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxgetbluetoothadapterstateobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1732,7 +1782,9 @@
       "type": "item",
       "description": "监听蓝牙适配器状态变化事件",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxonbluetoothadapterstatechangecallback",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1742,7 +1794,9 @@
       "type": "item",
       "description": "开始搜寻附近的蓝牙外围设备。注意，该操作比较耗费系统资源，请在搜索并连接到设备后调用 stop 方法停止搜索。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxstartbluetoothdevicesdiscoveryobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1752,7 +1806,9 @@
       "type": "item",
       "description": "停止搜寻附近的蓝牙外围设备。若已经找到需要的蓝牙设备并不需要继续搜索时，建议调用该接口停止蓝牙搜索。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxstopbluetoothdevicesdiscoveryobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1762,7 +1818,9 @@
       "type": "item",
       "description": "获取在小程序蓝牙模块生效期间所有已发现的蓝牙设备，包括已经和本机处于连接状态的设备。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxgetbluetoothdevicesobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1772,7 +1830,9 @@
       "type": "item",
       "description": "根据 uuid 获取处于已连接状态的设备",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxgetconnectedbluetoothdevicesobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1782,7 +1842,9 @@
       "type": "item",
       "description": "监听寻找到新设备的事件",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxonbluetoothdevicefoundcallback",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1792,7 +1854,9 @@
       "type": "item",
       "description": "连接低功耗蓝牙设备。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxcreatebleconnectionobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1802,7 +1866,9 @@
       "type": "item",
       "description": "断开与低功耗蓝牙设备的连接",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxclosebleconnectionobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1812,7 +1878,9 @@
       "type": "item",
       "description": "获取蓝牙设备所有 service（服务）",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxgetbledeviceservicesobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1822,7 +1890,9 @@
       "type": "item",
       "description": "获取蓝牙设备某个服务中的所有 characteristic（特征值）",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxgetbledevicecharacteristicsobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1832,7 +1902,9 @@
       "type": "item",
       "description": "读取低功耗蓝牙设备的特征值的二进制数据值。注意：必须设备的特征值支持read才可以成功调用，具体参照 characteristic 的 properties 属性",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxreadblecharacteristicvalueobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1842,7 +1914,9 @@
       "type": "item",
       "description": "向低功耗蓝牙设备特征值中写入二进制数据。注意：必须设备的特征值支持write才可以成功调用，具体参照 characteristic 的 properties 属性",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxwriteblecharacteristicvalueobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1852,7 +1926,9 @@
       "type": "item",
       "description": "启用低功耗蓝牙设备特征值变化时的 notify 功能，订阅特征值。注意：必须设备的特征值支持notify或者indicate才可以成功调用，具体参照 characteristic 的 properties 属性",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxnotifyblecharacteristicvaluechangeobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.1"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1862,7 +1938,9 @@
       "type": "item",
       "description": "监听低功耗蓝牙连接状态的改变事件，包括开发者主动连接或断开连接，设备丢失，连接异常断开等等",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxonbleconnectionstatechangecallback",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.1"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1872,7 +1950,9 @@
       "type": "item",
       "description": "监听低功耗蓝牙设备的特征值变化。必须先启用notify接口才能接收到设备推送的notification。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/bluetooth.html#wxonblecharacteristicvaluechangecallback",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1890,7 +1970,9 @@
       "type": "item",
       "description": "开始搜索附近的iBeacon设备",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/iBeacon.html#wxstartbeacondiscoveryobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.2.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1900,7 +1982,9 @@
       "type": "item",
       "description": "停止搜索附近的iBeacon设备",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/iBeacon.html#wxstopbeacondiscoveryobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.2.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1910,7 +1994,9 @@
       "type": "item",
       "description": "获取所有已搜索到的iBeacon设备",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/iBeacon.html#wxgetbeaconsobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.2.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1920,7 +2006,9 @@
       "type": "item",
       "description": "监听 iBeacon 设备的更新事件",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/iBeacon.html#wxonbeaconupdatecallback",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.2.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1930,7 +2018,9 @@
       "type": "item",
       "description": "监听 iBeacon 服务的状态变化",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/iBeacon.html#wxonbeaconservicechangecallback",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.2.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -1948,7 +2038,9 @@
       "type": "item",
       "description": "设置屏幕亮度。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxsetscreenbrightnessobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.2.0"
+      },
       "game": {},
       "plugin": {
        "minVersion": "1.9.6"
@@ -1959,7 +2051,9 @@
       "type": "item",
       "description": "获取屏幕亮度。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxgetscreenbrightnessobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.2.0"
+      },
       "game": {},
       "plugin": {
        "minVersion": "1.9.6"
@@ -1970,7 +2064,9 @@
       "type": "item",
       "description": "设置是否保持常亮状态。仅在当前小程序生效，离开小程序后设置失效。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/setKeepScreenOn.html",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.4.0"
+      },
       "game": {},
       "plugin": {
        "minVersion": "1.9.6"
@@ -1989,7 +2085,9 @@
       "type": "item",
       "description": "监听用户主动截屏事件，用户使用系统截屏按键截屏时触发此事件",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/onUserCaptureScreen.html",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.4.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -2007,7 +2105,9 @@
       "type": "item",
       "description": "使手机发生较长时间的振动（400ms）",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxvibratelongobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.2.0"
+      },
       "game": {},
       "plugin": {
        "minVersion": "1.9.6"
@@ -2018,7 +2118,9 @@
       "type": "item",
       "description": "使手机发生较短时间的振动（15ms）",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/device.html#wxvibrateshortobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.2.0"
+      },
       "game": {},
       "plugin": {
        "minVersion": "1.9.6"
@@ -2037,7 +2139,9 @@
       "type": "item",
       "description": "调用后，用户可以选择将该表单以“新增联系人”或“添加到已有联系人”的方式，写入手机系统通讯录，完成手机通讯录联系人和联系方式的增加。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/phone-contact.html#wxaddphonecontactobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.2.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -2055,35 +2159,45 @@
       "type": "item",
       "description": "判断当前设备是否支持 HCE 能力。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nfc.html#wxgethcestateobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.7.0"
+      }
      },
      {
       "name": "wx.startHCE",
       "type": "item",
       "description": "初始化 NFC 模块。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nfc.html#wxstarthceobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.7.0"
+      }
      },
      {
       "name": "wx.stopHCE",
       "type": "item",
       "description": "关闭 NFC 模块。仅在安卓系统下有效。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nfc.html#wxstophceobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.7.0"
+      }
      },
      {
       "name": "wx.onHCEMessage",
       "type": "item",
       "description": "监听 NFC 设备的消息回调，并在回调中处理。返回参数中 messageType 表示消息类型，目前有如下值：",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nfc.html#wxonhcemessagecallback",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.7.0"
+      }
      },
      {
       "name": "wx.sendHCEMessage",
       "type": "item",
       "description": "发送 NFC 消息。仅在安卓系统下有效。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/nfc.html#wx.sendhcemessageobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.7.0"
+      }
      }
     ],
     "subCnt": 5
@@ -2098,56 +2212,72 @@
       "type": "item",
       "description": "初始化 Wi-Fi 模块。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html#wxstartwifiobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.6.0"
+      }
      },
      {
       "name": "wx.stopWifi",
       "type": "item",
       "description": "关闭 Wi-Fi 模块。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html#wxstopwifiobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.6.0"
+      }
      },
      {
       "name": "wx.connectWifi",
       "type": "item",
       "description": "连接 Wi-Fi。若已知 Wi-Fi 信息，可以直接利用该接口连接。仅 Android 与 iOS 11 以上版本支持。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html#wxconnectwifiobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.6.0"
+      }
      },
      {
       "name": "wx.getWifiList",
       "type": "item",
       "description": "请求获取 Wi-Fi 列表，在 onGetWifiList 注册的回调中返回 wifiList 数据。iOS 将跳转到系统的 Wi-Fi 界面，Android 不会跳转。\niOS 11.0 及 iOS 11.1 两个版本因系统问题，该方法失效。但在 iOS 11.2 中已修复。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html#wxgetwifilistobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.6.0"
+      }
      },
      {
       "name": "wx.onGetWifiList",
       "type": "item",
       "description": "监听在获取到 Wi-Fi 列表数据时的事件，在回调中将返回 wifiList。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html#wxongetwifilistcallback",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.6.0"
+      }
      },
      {
       "name": "wx.setWifiList",
       "type": "item",
       "description": "iOS特有接口\n在 onGetWifiList 回调后，利用接口设置 wifiList 中 AP 的相关信息。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html#wxsetwifilistobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.6.0"
+      }
      },
      {
       "name": "wx.onWifiConnected",
       "type": "item",
       "description": "监听连接上 Wi-Fi 的事件。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html#wxonwificonnectedcallback",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.6.0"
+      }
      },
      {
       "name": "wx.getConnectedWifi",
       "type": "item",
       "description": "获取已连接中的 Wi-Fi 信息",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wifi.html#wxgetconnectedwifiobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.6.0"
+      }
      }
     ],
     "subCnt": 8
@@ -2203,7 +2333,9 @@
       "type": "item",
       "description": "显示 loading 提示框, 需主动调用 wx.hideLoading 才能关闭提示框",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html#wxshowloadingobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "game": {},
       "plugin": {
        "minVersion": "1.9.6"
@@ -2225,7 +2357,9 @@
       "type": "item",
       "description": "隐藏 loading 提示框",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-react.html#wxhideloading",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "game": {},
       "plugin": {
        "minVersion": "1.9.6"
@@ -2287,7 +2421,9 @@
       "type": "item",
       "description": "OBJECT参数说明：",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/setNavigationBarColor.html",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.4.0"
+      }
      }
     ],
     "subCnt": 4
@@ -2302,56 +2438,72 @@
       "type": "item",
       "description": "为 tabBar 某一项的右上角添加文本",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html#wxsettabbarbadgeobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.9.0"
+      }
      },
      {
       "name": "wx.removeTabBarBadge",
       "type": "item",
       "description": "移除 tabBar 某一项右上角的文本",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html#wxremovetabbarbadgeobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.9.0"
+      }
      },
      {
       "name": "wx.showTabBarRedDot",
       "type": "item",
       "description": "显示 tabBar 某一项的右上角的红点",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html#wxshowtabbarreddotobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.9.0"
+      }
      },
      {
       "name": "wx.hideTabBarRedDot",
       "type": "item",
       "description": "隐藏 tabBar 某一项的右上角的红点",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html#wxhidetabbarreddotobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.9.0"
+      }
      },
      {
       "name": "wx.setTabBarStyle",
       "type": "item",
       "description": "动态设置 tabBar 的整体样式",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html#wxsettabbarstyleobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.9.0"
+      }
      },
      {
       "name": "wx.setTabBarItem",
       "type": "item",
       "description": "动态设置 tabBar 某一项的内容",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html#wxsettabbaritemobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.9.0"
+      }
      },
      {
       "name": "wx.showTabBar",
       "type": "item",
       "description": "显示 tabBar 某一项的右上角的红点",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html#wxshowtabbarobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.9.0"
+      }
      },
      {
       "name": "wx.hideTabBar",
       "type": "item",
       "description": "隐藏 tabBar 某一项的右上角的红点",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-tabbar.html#wxhidetabbarobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.9.0"
+      }
      }
     ],
     "subCnt": 8
@@ -2366,7 +2518,9 @@
       "type": "item",
       "description": "动态设置置顶栏文字内容，只有当前小程序被置顶时能生效，如果当前小程序没有被置顶，也能调用成功，但是不会立即生效，只有在用户将这个小程序置顶后才换上设置的文字内容。注意：调用成功后，需间隔 5s 才能再次调用此接口，如果在 5s 内再次调用此接口，会回调 fail，errMsg：\"setTopBarText: fail invoke too frequently\"",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui.html#wxsettopbartextobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.4.3"
+      }
      }
     ],
     "subCnt": 1
@@ -2421,7 +2575,9 @@
       "type": "item",
       "description": "关闭所有页面，打开到应用内的某个页面。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ui-navigate.html#wxrelaunchobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "jssdk": {
        "minVersion": "1.6.5"
       }
@@ -2457,7 +2613,9 @@
       "type": "item",
       "description": "将页面滚动到目标位置。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/scroll.html",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.4.0"
+      }
      }
     ],
     "subCnt": 1
@@ -2533,7 +2691,9 @@
       "type": "item",
       "description": "返回一个数组，用来描述 canvas 区域隐含的像素数据",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/get-image-data.html",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.9.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -2543,7 +2703,9 @@
       "type": "item",
       "description": "将像素数据绘制到画布的方法",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/put-image-data.html",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.9.0"
+      },
       "plugin": {
        "minVersion": "1.9.6"
       }
@@ -2851,7 +3013,9 @@
       "type": "item",
       "description": "开始下拉刷新，调用后触发下拉刷新动画，效果与用户手动下拉刷新一致",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/pulldown.html#wxstartpulldownrefresh",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.5.0"
+      }
      },
      {
       "name": "wx.stopPullDownRefresh",
@@ -2882,7 +3046,9 @@
       "type": "item",
       "description": "将选择器的选取范围更改为自定义组件component内。（初始时，选择器仅选取页面范围的节点，不会选取任何自定义组件中的节点。）",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/wxml-nodes-info.html#selectorqueryincomponent",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.6.0"
+      }
      },
      {
       "name": "selectorQuery.select",
@@ -3125,14 +3291,18 @@
     "type": "item",
     "description": "获取第三方平台自定义的数据字段。",
     "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ext-api.html#wxgetextconfigobject",
-    "mp": {}
+    "mp": {
+     "minVersion": "1.1.0"
+    }
    },
    {
     "name": "wx.getExtConfigSync",
     "type": "item",
     "description": "获取第三方平台自定义的数据字段的同步接口。",
     "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/ext-api.html#wxgetextconfigsync",
-    "mp": {}
+    "mp": {
+     "minVersion": "1.1.0"
+    }
    }
   ],
   "subCnt": 2
@@ -3175,7 +3345,9 @@
       "type": "item",
       "description": "提前向用户发起授权请求。调用后会立刻弹窗询问用户是否同意授权小程序使用某项功能或获取用户的某些数据，但不会实际调用对应接口。如果用户之前已经同意授权，则不会出现弹窗，直接返回成功。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/authorize.html#wxauthorizeobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.2.0"
+      },
       "game": {}
      }
     ],
@@ -3278,7 +3450,9 @@
       "type": "item",
       "description": "调起用户编辑收货地址原生界面，并在编辑完成后返回用户选择的地址。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/address.html#wxchooseaddressobject",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.1.0"
+      }
      }
     ],
     "subCnt": 1
@@ -3293,7 +3467,9 @@
       "type": "item",
       "description": "批量添加卡券。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/card.html#wxaddcardobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "jssdk": {}
      },
      {
@@ -3301,7 +3477,9 @@
       "type": "item",
       "description": "查看微信卡包中的卡券。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/card.html#wxopencardobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "jssdk": {}
      }
     ],
@@ -3317,7 +3495,9 @@
       "type": "item",
       "description": "调起客户端小程序设置界面，返回用户设置的操作结果。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/setting.html#wxopensettingobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.1.0"
+      },
       "game": {}
      },
      {
@@ -3325,7 +3505,9 @@
       "type": "item",
       "description": "获取用户的当前设置。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/setting.html#wxgetsettingobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.2.0"
+      },
       "game": {}
      },
      {
@@ -3348,7 +3530,9 @@
       "type": "item",
       "description": "获取用户过去三十天微信运动步数，需要先调用 wx.login 接口。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/we-run.html#wxgetwerundataobject",
-      "mp": {},
+      "mp": {
+       "minVersion": "1.2.0"
+      },
       "game": {}
      }
     ],
@@ -3364,14 +3548,18 @@
       "type": "item",
       "description": "打开同一公众号下关联的另一个小程序。（注：必须是同一公众号下，而非同个 open 账号下）",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/navigateToMiniProgram.html",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.3.0"
+      }
      },
      {
       "name": "wx.navigateBackMiniProgram",
       "type": "item",
       "description": "返回到上一个小程序，只有在当前小程序是被其他小程序打开时可以调用成功",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/navigateBackMiniProgram.html",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.3.0"
+      }
      }
     ],
     "subCnt": 2
@@ -3400,7 +3588,9 @@
       "type": "item",
       "description": "选择用户的发票抬头。",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/chooseInvoiceTitle.html",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.5.0"
+      }
      }
     ],
     "subCnt": 1
@@ -3415,21 +3605,27 @@
       "type": "item",
       "description": "获取本机支持的 SOTER 生物认证方式",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/checkIsSupportSoterAuthentication.html",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.5.0"
+      }
      },
      {
       "name": "wx.startSoterAuthentication",
       "type": "item",
       "description": "开始 SOTER 生物认证",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/startSoterAuthentication.html",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.5.0"
+      }
      },
      {
       "name": "wx.checkIsSoterEnrolledInDevice",
       "type": "item",
       "description": "获取设备内是否录入如指纹等生物信息的接口",
       "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/checkIsSoterEnrolledInDevice.html",
-      "mp": {}
+      "mp": {
+       "minVersion": "1.6.0"
+      }
      }
     ],
     "subCnt": 3
@@ -3504,7 +3700,9 @@
     "type": "item",
     "description": "获取全局唯一的版本更新管理器，用于管理小程序更新。",
     "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/getUpdateManager.html",
-    "mp": {}
+    "mp": {
+     "minVersion": "1.9.90"
+    }
    }
   ],
   "subCnt": 1
@@ -3519,7 +3717,9 @@
     "type": "item",
     "description": "在使用 createWorker 前，请查阅 多线程 文档了解基础知识和配置方法。",
     "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/createWorker.html",
-    "mp": {},
+    "mp": {
+     "minVersion": "1.9.90"
+    },
     "game": {}
    }
   ],
@@ -3881,7 +4081,9 @@
     "type": "item",
     "description": "设置是否打开调试开关，此开关对正式版也能生效。",
     "url": "https://mp.weixin.qq.com/debug/wxagame/dev/document/debug/wx.setEnableDebug.html?t=201832",
-    "game": {}
+    "game": {
+     "minVersion": "1.4.0"
+    }
    }
   ],
   "subCnt": 1

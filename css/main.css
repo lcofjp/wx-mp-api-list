@@ -6,3 +6,22 @@ html {
     text-align: center;
     font-size: 1.5em;
 }
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+#root {
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.div-center {
+    text-align: center;
+    width: 100%;
+}

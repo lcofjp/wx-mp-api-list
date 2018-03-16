@@ -103,7 +103,7 @@ function combineListToMap(map, list, type) {
         description: i.description,
         categoryLevel: i.categoryLevel || [],
         url: i.url,
-        [type]: i.minVersion ? {minVersion: i.minVersion} : {}
+        [type]: i[type] || (i.minVersion ? {minVersion: i.minVersion} : {})
       }
       map.set(name, item)
     }
@@ -119,6 +119,6 @@ for (const [k,v] of apiMap) {
   addItemToCategory(rootCategory, v.categoryLevel, v)
 }
 
-// saveToJsonFile('./output/summary.json', rootCategory)
+saveToJsonFile('./output/summary.json', rootCategory)
 
 
