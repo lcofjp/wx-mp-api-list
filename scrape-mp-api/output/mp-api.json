@@ -3154,7 +3154,11 @@
         "name": "绘图",
         "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
        }
-      ]
+      ],
+      "detail": {
+       "description": "创建并返回绘图上下文。",
+       "funcProto": "wx.createContext (不推荐使用)"
+      }
      },
      {
       "type": "item",
@@ -3199,7 +3203,12 @@
         "name": "绘图",
         "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
        }
-      ]
+      ],
+      "detail": {
+       "description": "返回一个数组，用来描述 canvas 区域隐含的像素数据",
+       "funcProto": "wx.canvasGetImageData(OBJECT)",
+       "minVersion": "1.9.0"
+      }
      },
      {
       "type": "item",
@@ -3214,7 +3223,12 @@
         "name": "绘图",
         "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
        }
-      ]
+      ],
+      "detail": {
+       "description": "将像素数据绘制到画布的方法",
+       "funcProto": "wx.canvasPutImageData(OBJECT)",
+       "minVersion": "1.9.0"
+      }
      },
      {
       "type": "item",
@@ -3784,7 +3798,11 @@
         "name": "绘图",
         "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
        }
-      ]
+      ],
+      "detail": {
+       "description": "返回绘图上下文的绘图动作。",
+       "funcProto": "getActions (不推荐使用)"
+      }
      },
      {
       "type": "item",
@@ -3799,7 +3817,11 @@
         "name": "绘图",
         "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/canvas/reference.html"
        }
-      ]
+      ],
+      "detail": {
+       "description": "清空绘图上下文的绘图动作。",
+       "funcProto": "canvasContext.clearActions (不推荐使用)"
+      }
      },
      {
       "type": "item",
@@ -4448,7 +4470,11 @@
         "name": "用户信息",
         "url": "https://mp.weixin.qq.com/debug/wxadoc/dev/api/open.html"
        }
-      ]
+      ],
+      "detail": {
+       "description": "获取微信用户绑定的手机号，需先调用login接口。",
+       "funcProto": "getPhoneNumber(OBJECT)"
+      }
      },
      {
       "type": "item",

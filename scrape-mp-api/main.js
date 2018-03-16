@@ -76,7 +76,11 @@ function parseRoot(rootElement, curUrl, $) {
 
 function parseItem(itemObject, html) {
   const divWrapper = locateElement(html, '.page-wrapper')
-  divWrapper.find('h3').toArray().some(v => {
+  let $titles = divWrapper.find('h3')
+  if ($titles.length === 0) {
+    $titles = divWrapper.find('h1')
+  }
+  $titles.toArray().some(v => {
     try {
       const title = cheerio(v).text().trim()
       const limit = cheerio(v).next('blockquote').text().trim().match(/\d+.\d+.\d+/)
@@ -124,12 +128,16 @@ function saveUrlApiToJsonFile(url, filename) {
   })
 }
 
-saveUrlApiToJsonFile(MP_API_URL, './output/mp-api.json')
-saveUrlApiToJsonFile(GAME_API_URL, './output/game-api.json')
+// saveUrlApiToJsonFile(MP_API_URL, './output/mp-api.json')
+// saveUrlApiToJsonFile(GAME_API_URL, './output/game-api.json')
 
-getJssdkApi(JSSDK_API_URL).then(obj => {
-  saveToJsonFile('./output/jssdk-api.json', obj)
-})
-getPluginApi(PLUGIN_API_URL).then(obj => {
-  saveToJsonFile('./output/plugin-api.json', obj)
-})
+// getJssdkApi(JSSDK_API_URL).then(obj => {
+//   saveToJsonFile('./output/jssdk-api.json', obj)
+// })
+// getPluginApi(PLUGIN_API_URL).then(obj => {
+//   saveToJsonFile('./output/plugin-api.json', obj)
+// })
+
+module.exports = {
+  saveToJsonFile
+}
