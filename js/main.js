@@ -44,9 +44,9 @@ function rowspan(obj) {
 function sps(obj) {
   if (obj) {
     if (obj.minVersion) {
-      return `<div class="div-center">✔</div><div class="div-center">(${obj.minVersion})</div>`
+      return `<div class="div-center yes">✔</div><div class="div-center">(${obj.minVersion})</div>`
     } else {
-      return '<div class="div-center">✔</div>'
+      return '<div class="div-center yes">✔</div>'
     }
   } else {
     return '<div class="div-center">✘</div>'

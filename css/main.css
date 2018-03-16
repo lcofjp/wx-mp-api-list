@@ -25,3 +25,7 @@ td, th {
     text-align: center;
     width: 100%;
 }
+
+.yes {
+    color: red;
+}
